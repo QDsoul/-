@@ -119,10 +119,12 @@ define(["jquery", "jquery-cookie"], function ($) {
                             left: -1 * iNow * res.bannerImg[0].width
                         }, 500, function(){
                             if(iNow == $("#bannerImg ol li").size() + 1){
-                                $("#bannerImg ul").css("left", -1 * res.bannerImg[0].width);
+                                var imgLeft = -1 * res.bannerImg[0].width;
+                                $("#bannerImg ul").css("left", imgLeft);
                                 iNow = 1;
                             }else if(iNow == 0){
-                                $("#bannerImg ul").css("left", -1 * res.bannerImg[0].width * ($("#bannerImg ol li").size()));
+                                var imgLeft = -1 * res.bannerImg[0].width * ($("#bannerImg ol li").size());
+                                $("#bannerImg ul").css("left", imgLeft);
                                 iNow = $("#bannerImg ol li").size();
                             }
                         })
@@ -175,7 +177,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                     alert(msg);
                 }
             })
-
+            // 商品加载
             $.ajax({
                 type : "GET",
                 url : "../json/products.json",
@@ -183,98 +185,71 @@ define(["jquery", "jquery-cookie"], function ($) {
                     var productsHtml = "";
                     // alert(res.length);
                     for(var i = 0; i < res.length; i++){
+                        var aHtml = "";
+                        var dlHtml = "";
+                        var logoHtml = "";
+                        for(var j = 0; j < res[i].hot.length; j++){
+                            if(res[i].hot[j].indexOf("*") == 0){
+                                aHtml += `<a style='color:#e54077' href="">${res[i].hot[j].substring(1)}</a>`;
+                            }else{
+                                aHtml += `<a href="">${res[i].hot[j]}</a>`;
+                            }
+                        }
+                        for(var k = 0; k < res[i].products.length; k++){
+                            // if(k == 0){
+                                dlHtml += `
+                                <dl title="${res[i].products[k].name}">
+                                        <dt>
+                                            <img style='height:${res[i].products[k].height};width:${res[i].products[k].width}' src="../images/${res[i].products[k].url}" alt="">
+                                        </dt>
+                                        <dd>
+                                            <p>${res[i].products[k].name}</p>
+                                            <span>
+                                                <em>￥${res[i].products[k].price}</em>
+                                                <i>￥${res[i].products[k].costPrice}</i>
+                                            </span>
+                                        </dd>
+                                    </dl>`;
+                            // }else{
+                                // dlHtml += `1`;
+                            // }
+                        }
+                        for(var l = 0; l < res[i].logo.length; l++){
+                            logoHtml += `<dl title="${res[i].logo[l].name}">
+                                            <dt>
+                                                <img style='height:${res[i].logo[l].height};width:${res[i].logo[l].width}' src="../images/${res[i].logo[l].url}" alt="">
+                                            </dt>
+                                            <dd>
+                                                <p>${res[i].logo[l].name}</p>
+                                            </dd>
+                                        </dl>`;
+                        }
                         productsHtml += `
                         <div class="productBox">
                             <div class="productTitle">
-                                <a href=""><img src="../images/${res[i].title.url}" alt=""></a>
+                            <img style='height:${res[i].topTitle.height};width:${res[i].topTitle.width}' src="../images/${res[i].topTitle.url}" alt="">
                             </div>
                             <div class="product">
                                 <div class="hot">
                                     <h4>最热HOT</h4>
-                                    <a href="">补水</a>
+                                    ${aHtml}
                                 </div>
                                 <div class="title">
-                                    <img src="../images/album-panel1.png" alt="">
+                                <a href=""><img src="../images/${res[i].title.url}" alt=""></a>
                                     <div class="detail">
-                                        <h2>美容护肤专区</h2>
+                                        <h2>${res[i].title.text}</h2>
                                         <p>查看更多&gt;</p>
                                     </div>
                                 </div>
                                 <div class="pro">
-                                    <dl title="迪奥粉漾变色唇膏">
-                                        <dt>
-                                            <img src="../images/skin&bodyCare_02.jpg" alt="">
-                                        </dt>
-                                        <dd>
-                                            <p>迪奥粉漾变色唇膏</p>
-                                            <span>
-                                                <em>￥259</em>
-                                                <i>￥300</i>
-                                            </span>
-                                        </dd>
-                                    </dl>
-                                    <dl title="迪奥粉漾变色唇膏">
-                                        <dt>
-                                            <img src="../images/skin&bodyCare_02.jpg" alt="">
-                                        </dt>
-                                        <dd>
-                                            <p>迪奥粉漾变色唇膏</p>
-                                            <span>
-                                                <em>￥259</em>
-                                                <i>￥300</i>
-                                            </span>
-                                        </dd>
-                                    </dl>
-                                    <dl title="迪奥粉漾变色唇膏">
-                                        <dt>
-                                            <img src="../images/skin&bodyCare_02.jpg" alt="">
-                                        </dt>
-                                        <dd>
-                                            <p>迪奥粉漾变色唇膏</p>
-                                            <span>
-                                                <em>￥259</em>
-                                                <i>￥300</i>
-                                            </span>
-                                        </dd>
-                                    </dl>
-                                    <dl title="迪奥粉漾变色唇膏">
-                                        <dt>
-                                            <img src="../images/skin&bodyCare_02.jpg" alt="">
-                                        </dt>
-                                        <dd>
-                                            <p>迪奥粉漾变色唇膏</p>
-                                            <span>
-                                                <em>￥259</em>
-                                                <i>￥300</i>
-                                            </span>
-                                        </dd>
-                                    </dl>
-                                    <dl title="迪奥粉漾变色唇膏">
-                                        <dt>
-                                            <img src="../images/skin&bodyCare_02.jpg" alt="">
-                                        </dt>
-                                        <dd>
-                                            <p>迪奥粉漾变色唇膏</p>
-                                            <span>
-                                                <em>￥259</em>
-                                                <i>￥300</i>
-                                            </span>
-                                        </dd>
-                                    </dl>
+                                    ${dlHtml}
                                 </div>
                                 <div class="logo">
                                     <h3>
                                         <b>BRAND</b>
                                         <strong>热卖品牌</strong>
                                     </h3>
-                                    <dl title="日本知名化妆品牌">
-                                        <dt>
-                                            <img src="../images/skin&bodyCare_logo_01.jpg" alt="">
-                                        </dt>
-                                        <dd>
-                                            <p>日本知名化妆品牌</p>
-                                        </dd>
-                                    </dl>
+                                    ${logoHtml}
                                 </div>
                             </div>
                         </div>
