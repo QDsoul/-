@@ -458,7 +458,7 @@ header {
         display: block;
         width: 34px;
         height: 68px;
-        background: rgba(43, 43, 43, 0.3) url("../images/banner_prevPic.png") no-repeat 9px 21px;
+        background: rgba(43, 43, 43, 0.3) url("../images/indexImg/banner_prevPic.png") no-repeat 9px 21px;
         position: absolute;
         top: 50%;
         left: -34px;
@@ -466,12 +466,12 @@ header {
         cursor: pointer;
         margin-top: -34px; }
       .bannerBox .banner .bannerImg #prevBanner:hover {
-        background: rgba(43, 43, 43, 0.5) url("../images/banner_prevPic.png") no-repeat 9px 21px; }
+        background: rgba(43, 43, 43, 0.5) url("../images/indexImg/banner_prevPic.png") no-repeat 9px 21px; }
       .bannerBox .banner .bannerImg #nextBanner {
         display: block;
         width: 34px;
         height: 68px;
-        background: rgba(43, 43, 43, 0.3) url("../images/banner_nextPic.png") no-repeat 9px 21px;
+        background: rgba(43, 43, 43, 0.3) url("../images/indexImg/banner_nextPic.png") no-repeat 9px 21px;
         position: absolute;
         top: 50%;
         right: -34px;
@@ -479,7 +479,7 @@ header {
         cursor: pointer;
         margin-top: -34px; }
       .bannerBox .banner .bannerImg #nextBanner:hover {
-        background: rgba(43, 43, 43, 0.5) url("../images/banner_nextPic.png") no-repeat 9px 21px; }
+        background: rgba(43, 43, 43, 0.5) url("../images/indexImg/banner_nextPic.png") no-repeat 9px 21px; }
     .bannerBox .banner .codeImg {
       width: 240px;
       height: 420px;
@@ -755,19 +755,24 @@ footer {
       padding-top: 15px;
       color: white;
       margin: 0 auto; }
-      footer .bottomBox .bottom ul li {
-        float: left; }
-        footer .bottomBox .bottom ul li a {
-          color: white;
-          font-size: 12px;
-          height: 25px;
-          line-height: 25px;
-          white-space: nowrap;
-          margin-right: 5px; }
-        footer .bottomBox .bottom ul li a:hover {
-          text-decoration: underline; }
+      footer .bottomBox .bottom ul {
+        height: 35px;
+        line-height: 35px; }
+        footer .bottomBox .bottom ul li {
+          float: left; }
+          footer .bottomBox .bottom ul li a {
+            color: white;
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+            white-space: nowrap;
+            margin-right: 5px; }
+          footer .bottomBox .bottom ul li a:hover {
+            text-decoration: underline; }
       footer .bottomBox .bottom ol {
-        clear: both; }
+        clear: both;
+        height: 35px;
+        line-height: 35px; }
         footer .bottomBox .bottom ol li {
           float: left; }
           footer .bottomBox .bottom ol li a {

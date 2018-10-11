@@ -16,7 +16,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                     for (var i = 0; i < res.category.length; i++) {
                         html += `<dl>
                                     <dt>
-                                        <img src="../images/${res.category[i].imgUrl}" alt="${res.category[i].title}">
+                                        <img src="../images/indexImg/${res.category[i].imgUrl}" alt="${res.category[i].title}">
                                         <h4>${res.category[i].title}</h4>
                                     </dt>
                                     <dd>
@@ -66,16 +66,16 @@ define(["jquery", "jquery-cookie"], function ($) {
                     });
                     // banner
                     // 动态添加图片
-                    var imgHtml = `<a href=""><img src="../images/${res.bannerImg[res.bannerImg.length - 1].url}" alt=""></img></a>`;
+                    var imgHtml = `<a href=""><img src="../images/indexImg/${res.bannerImg[res.bannerImg.length - 1].url}" alt=""></img></a>`;
                     for(var l = 0; l < res.bannerImg.length; l++){
-                        imgHtml += `<a href=""><img src="../images/${res.bannerImg[l].url}" alt=""></img></a>`;
+                        imgHtml += `<a href=""><img src="../images/indexImg/${res.bannerImg[l].url}" alt=""></img></a>`;
                     }
                     var bannerUlWidth = (res.bannerImg.length + 2) * res.bannerImg[0].width;
                     $("#bannerImg ul").css({
                         width : bannerUlWidth + "px",
                         left : -1 * res.bannerImg[0].width + "px"
                     });
-                    imgHtml += `<a href=""><img src="../images/${res.bannerImg[0].url}" alt=""></img></a>`; 
+                    imgHtml += `<a href=""><img src="../images/indexImg/${res.bannerImg[0].url}" alt=""></img></a>`; 
                     $(imgHtml).appendTo($("#bannerImg ul"));
                     
                     var iNow = 1;
@@ -91,6 +91,12 @@ define(["jquery", "jquery-cookie"], function ($) {
                     },function(){
                         timer = setInterval(timerInner, 3000);    
                     })
+
+                    // $("#bannerImg").mouseenter(function(){
+                    //     clearInterval(timer);
+                    // }).mouseleave(function(){
+                    //     timer = setInterval(timerInner, 3000);
+                    // })
 
                     timer = setInterval(timerInner, 3000);
 
@@ -114,9 +120,9 @@ define(["jquery", "jquery-cookie"], function ($) {
                         }else if(iNow == 0){
                             $("#bannerImg ol li").eq($("#bannerImg ol li").size()).attr("class", "active");
                         }
-
+                        var imgAnimite = -1 * iNow * res.bannerImg[0].width;
                         $("#bannerImg ul").stop().animate({
-                            left: -1 * iNow * res.bannerImg[0].width
+                            left: imgAnimite
                         }, 500, function(){
                             if(iNow == $("#bannerImg ol li").size() + 1){
                                 var imgLeft = -1 * res.bannerImg[0].width;
@@ -130,7 +136,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                         })
                     }
                     // 二维码
-                    $(`<img src="../images/${res.codeImg.url}" alt="">`).appendTo($("#codeImg"));
+                    $(`<img src="../images/indexImg/${res.codeImg.url}" alt="">`).appendTo($("#codeImg"));
                 },
                 error: function (msg) {
                     alert(msg);
@@ -150,15 +156,15 @@ define(["jquery", "jquery-cookie"], function ($) {
                 type : "GET",
                 url : "../json/topProduct.json",
                 success : function(res){
-                    $(`<img style='height:${res.promise.height};width:${res.promise.width}' src="../images/${res.promise.url}" alt="">`).appendTo($(".topProduct .promise"));
+                    $(`<img style='height:${res.promise.height};width:${res.promise.width}' src="../images/indexImg/${res.promise.url}" alt="">`).appendTo($(".topProduct .promise"));
                     var productsHtml = "";
                     // 全球必买
-                    $(`<img style='height:${res.choice.title.height};width:${res.choice.title.width}' src="../images/${res.choice.title.url}" alt="">`).appendTo($("#topProduct .model1 .title"));
+                    $(`<img style='height:${res.choice.title.height};width:${res.choice.title.width}' src="../images/indexImg/${res.choice.title.url}" alt="">`).appendTo($("#topProduct .model1 .title"));
                     for(var i = 0; i < res.choice.product.length; i++){
                         productsHtml += `<a href="">
                                             <dl title='${res.choice.product[i].desc}'>
                                                 <dt>
-                                                    <img style='height:${res.choice.product[i].height};width:${res.choice.product[i].width}' src="../images/${res.choice.product[i].url}" alt="">
+                                                    <img style='height:${res.choice.product[i].height};width:${res.choice.product[i].width}' src="../images/indexImg/${res.choice.product[i].url}" alt="">
                                                 </dt>
                                                 <dd>
                                                     <p title='${res.choice.product[i].desc}'>${res.choice.product[i].desc}</p>
@@ -170,7 +176,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                     }
                     $(productsHtml).appendTo($("#topProduct .model1 .products"));
                     // 品牌街
-                    $(`<img style='height:${res.superBrand.height};width:${res.superBrand.width}' src="../images/${res.superBrand.url}" alt="">`).appendTo($("#topProduct .model2 .title"));
+                    $(`<img style='height:${res.superBrand.height};width:${res.superBrand.width}' src="../images/indexImg/${res.superBrand.url}" alt="">`).appendTo($("#topProduct .model2 .title"));
 
                 },
                 error : function(msg){
@@ -200,7 +206,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                                 dlHtml += `
                                 <dl title="${res[i].products[k].name}">
                                         <dt>
-                                            <img style='height:${res[i].products[k].height};width:${res[i].products[k].width}' src="../images/${res[i].products[k].url}" alt="">
+                                            <img style='height:${res[i].products[k].height};width:${res[i].products[k].width}' src="../images/indexImg/${res[i].products[k].url}" alt="">
                                         </dt>
                                         <dd>
                                             <p>${res[i].products[k].name}</p>
@@ -217,7 +223,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                         for(var l = 0; l < res[i].logo.length; l++){
                             logoHtml += `<dl title="${res[i].logo[l].name}">
                                             <dt>
-                                                <img style='height:${res[i].logo[l].height};width:${res[i].logo[l].width}' src="../images/${res[i].logo[l].url}" alt="">
+                                                <img style='height:${res[i].logo[l].height};width:${res[i].logo[l].width}' src="../images/indexImg/${res[i].logo[l].url}" alt="">
                                             </dt>
                                             <dd>
                                                 <p>${res[i].logo[l].name}</p>
@@ -227,7 +233,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                         productsHtml += `
                         <div class="productBox">
                             <div class="productTitle">
-                            <img style='height:${res[i].topTitle.height};width:${res[i].topTitle.width}' src="../images/${res[i].topTitle.url}" alt="">
+                            <img style='height:${res[i].topTitle.height};width:${res[i].topTitle.width}' src="../images/indexImg/${res[i].topTitle.url}" alt="">
                             </div>
                             <div class="product">
                                 <div class="hot">
@@ -235,7 +241,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                                     ${aHtml}
                                 </div>
                                 <div class="title">
-                                <a href=""><img src="../images/${res[i].title.url}" alt=""></a>
+                                <a href=""><img src="../images/indexImg/${res[i].title.url}" alt=""></a>
                                     <div class="detail">
                                         <h2>${res[i].title.text}</h2>
                                         <p>查看更多&gt;</p>

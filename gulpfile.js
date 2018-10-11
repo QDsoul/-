@@ -43,8 +43,8 @@ gulp.task("iconfont", function(){
 })
 
 gulp.task("image", function () {
-    return gulp.src("images/*.{jpg,png}")
-        .pipe(gulp.dest("dist/images"))
+    return gulp.src("images/index/*.{jpg,png}")
+        .pipe(gulp.dest("dist/images/indexImg"))
         .pipe(connect.reload());
 })
 
@@ -71,7 +71,7 @@ gulp.task("watch", function () {
     gulp.watch(["*.js", "!gulpfile.js"], ["javascript"]);
     gulp.watch("stylesheet/index.scss", ["scssIndex"]);
     gulp.watch("stylesheet/reset.scss", ["scssReset"]);
-    gulp.watch("images/*.{jpg,png}",[ "image"]);
+    gulp.watch("images/index/*.{jpg,png}",[ "image"]);
     gulp.watch(["*.json", "!package.json", "!package-lock.json"], ["data"]);
     gulp.watch("iconfont/**/*",[ "iconfont"]);
 })

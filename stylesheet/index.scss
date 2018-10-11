@@ -657,7 +657,7 @@ header {
                 display: block;
                 width: 34px;
                 height: 68px;
-                background: rgba(43, 43, 43, .3) url("../images/banner_prevPic.png") no-repeat 9px 21px;
+                background: rgba(43, 43, 43, .3) url("../images/indexImg/banner_prevPic.png") no-repeat 9px 21px;
                 position: absolute;
                 top: 50%;
                 left: -34px;
@@ -667,14 +667,14 @@ header {
             }
 
             #prevBanner:hover {
-                background: rgba(43, 43, 43, .5) url("../images/banner_prevPic.png") no-repeat 9px 21px;
+                background: rgba(43, 43, 43, .5) url("../images/indexImg/banner_prevPic.png") no-repeat 9px 21px;
             }
 
             #nextBanner {
                 display: block;
                 width: 34px;
                 height: 68px;
-                background: rgba(43, 43, 43, .3) url("../images/banner_nextPic.png") no-repeat 9px 21px;
+                background: rgba(43, 43, 43, .3) url("../images/indexImg/banner_nextPic.png") no-repeat 9px 21px;
                 position: absolute;
                 top: 50%;
                 right: -34px;
@@ -684,7 +684,7 @@ header {
             }
 
             #nextBanner:hover {
-                background: rgba(43, 43, 43, .5) url("../images/banner_nextPic.png") no-repeat 9px 21px;
+                background: rgba(43, 43, 43, .5) url("../images/indexImg/banner_nextPic.png") no-repeat 9px 21px;
             }
         }
 
@@ -1097,6 +1097,8 @@ footer {
             color: white;
             margin: 0 auto;
             ul{
+                height: 35px;
+                line-height: 35px;
                 li{
                     float: left;
                     a{
@@ -1114,6 +1116,8 @@ footer {
             }
             ol{
                 clear: both;
+                height: 35px;
+                line-height: 35px;
                 li{
                     float: left;
                     a{
