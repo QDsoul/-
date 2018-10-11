@@ -1,0 +1,24 @@
+@charset "UTF-8";
+html,body,ul,ol,dl,li,dd,dt,
+h1,h2,h3,h4,h5,span,div,p,
+input,img
+{
+    margin: 0;
+    padding: 0;
+}
+a,u{
+    text-decoration: none;
+    color: black;
+}
+ul,ol,li{
+    list-style: none;
+}
+img{
+    border: none;
+    _border: 0;
+    display: block;
+}
+/* input{
+    border: none;
+    _border: 0;
+} */
