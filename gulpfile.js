@@ -26,12 +26,22 @@ gulp.task("scssIndex", function () {
         .pipe(connect.reload());
 })
 
-gulp.task("scssReset", function () {
-    return gulp.src("stylesheet/reset.scss")
+gulp.task("scssLogin", function () {
+    return gulp.src("stylesheet/login.scss")
         .pipe(scss())
         .pipe(gulp.dest("dist/css"))
         .pipe(minifyCss())
-        .pipe(rename("reset_min.css"))
+        .pipe(rename("login_min.css"))
+        .pipe(gulp.dest("dist/css"))
+        .pipe(connect.reload());
+})
+
+gulp.task("scssRegister", function () {
+    return gulp.src("stylesheet/register.scss")
+        .pipe(scss())
+        .pipe(gulp.dest("dist/css"))
+        .pipe(minifyCss())
+        .pipe(rename("register_min.css"))
         .pipe(gulp.dest("dist/css"))
         .pipe(connect.reload());
 })
@@ -43,8 +53,8 @@ gulp.task("iconfont", function(){
 })
 
 gulp.task("image", function () {
-    return gulp.src("images/index/*.{jpg,png}")
-        .pipe(gulp.dest("dist/images/indexImg"))
+    return gulp.src("images/**/*")
+        .pipe(gulp.dest("dist/images"))
         .pipe(connect.reload());
 })
 
@@ -54,7 +64,7 @@ gulp.task("data", function () {
         .pipe(connect.reload());
 })
 
-gulp.task("build", ["copyHtml", "javascript", "scssIndex","scssReset" , "image", "data", "iconfont"]);
+gulp.task("build", ["copyHtml", "javascript", "scssIndex", "scssLogin", "scssRegister", "image", "data", "iconfont"]);
 
 const connect = require("gulp-connect");
 
@@ -70,8 +80,9 @@ gulp.task("watch", function () {
     gulp.watch(["*.html"], ["copyHtml"]);
     gulp.watch(["*.js", "!gulpfile.js"], ["javascript"]);
     gulp.watch("stylesheet/index.scss", ["scssIndex"]);
-    gulp.watch("stylesheet/reset.scss", ["scssReset"]);
-    gulp.watch("images/index/*.{jpg,png}",[ "image"]);
+    gulp.watch("stylesheet/login.scss", ["scssLogin"]);
+    gulp.watch("stylesheet/register.scss", ["scssRegister"]);
+    gulp.watch("images/**/*",[ "image"]);
     gulp.watch(["*.json", "!package.json", "!package-lock.json"], ["data"]);
     gulp.watch("iconfont/**/*",[ "iconfont"]);
 })

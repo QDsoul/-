@@ -1,3 +1,38 @@
+html,
+body,
+ul,
+ol,
+dl,
+li,
+dd,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+div,
+p,
+input,
+img {
+  margin: 0;
+  padding: 0; }
+
+a,
+u {
+  text-decoration: none;
+  color: black; }
+
+ul,
+ol,
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  display: block; }
+
 header {
   height: 119px; }
   header .topBox {
@@ -298,6 +333,281 @@ header {
         background: linear-gradient(to right, #ff1655 20%, #ff5295 80%);
         font-size: 16px;
         cursor: pointer; }
+
+footer {
+  height: 580px; }
+  footer .promiseBox {
+    height: 120px;
+    background: #f5f5f5; }
+    footer .promiseBox .promise {
+      width: 1190px;
+      margin: 0 auto; }
+  footer .phoneBox {
+    height: 300px;
+    background: linear-gradient(to right, #ff1655 20%, #ff33cc 80%); }
+    footer .phoneBox .phone {
+      width: 1190px;
+      margin: 0 auto; }
+      footer .phoneBox .phone .left {
+        float: left;
+        color: white; }
+        footer .phoneBox .phone .left img {
+          width: 213px;
+          height: 59px;
+          margin-top: 50px; }
+        footer .phoneBox .phone .left em {
+          display: block;
+          font-size: 14px;
+          height: 21px;
+          line-height: 21px;
+          font-style: normal;
+          margin-top: 50px; }
+        footer .phoneBox .phone .left i {
+          display: block;
+          font-size: 24px;
+          height: 36px;
+          line-height: 36px;
+          font-style: normal;
+          margin-top: 10px; }
+        footer .phoneBox .phone .left b {
+          display: block;
+          height: 21px;
+          line-height: 21px;
+          font-size: 14px;
+          font-weight: normal; }
+      footer .phoneBox .phone .right {
+        float: right;
+        padding-top: 50px; }
+        footer .phoneBox .phone .right p {
+          font-size: 12px;
+          color: white;
+          height: 28px;
+          line-height: 28px; }
+        footer .phoneBox .phone .right p:nth-child(1) {
+          margin-top: 5px; }
+  footer .bottomBox {
+    height: 160px;
+    background: #000; }
+    footer .bottomBox .bottom {
+      width: 1190px;
+      padding-top: 15px;
+      color: white;
+      margin: 0 auto; }
+      footer .bottomBox .bottom ul {
+        height: 35px;
+        line-height: 35px; }
+        footer .bottomBox .bottom ul li {
+          float: left; }
+          footer .bottomBox .bottom ul li a {
+            color: white;
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+            white-space: nowrap;
+            margin-right: 5px; }
+          footer .bottomBox .bottom ul li a:hover {
+            text-decoration: underline; }
+      footer .bottomBox .bottom ol {
+        clear: both;
+        height: 35px;
+        line-height: 35px; }
+        footer .bottomBox .bottom ol li {
+          float: left; }
+          footer .bottomBox .bottom ol li a {
+            color: white;
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+            white-space: nowrap;
+            padding-right: 5px;
+            padding-left: 5px;
+            border-right: 1px solid white; }
+          footer .bottomBox .bottom ol li a:hover {
+            text-decoration: underline; }
+        footer .bottomBox .bottom ol li:nth-last-child(1) a {
+          border: none; }
+      footer .bottomBox .bottom div p {
+        font-size: 12px;
+        color: #a4a4a4; }
+        footer .bottomBox .bottom div p a {
+          font-size: 12px;
+          color: #a4a4a4;
+          margin-right: 65px; }
+        footer .bottomBox .bottom div p a:hover {
+          text-decoration: underline; }
+        footer .bottomBox .bottom div p b {
+          color: #686868;
+          font-weight: 400; }
+      footer .bottomBox .bottom div a img {
+        width: 24px;
+        height: 24px; }
+
+#rightMenuBox {
+  width: 35px;
+  background: #000;
+  position: fixed;
+  right: 0;
+  top: 0; }
+  #rightMenuBox .tip {
+    display: none;
+    opacity: 0;
+    width: 90px;
+    height: 35px;
+    background: #494949;
+    position: absolute;
+    right: 70px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 12px; }
+    #rightMenuBox .tip .bugle {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -6px;
+      top: 10px;
+      line-height: 16px;
+      font-size: 32px;
+      text-align: center;
+      color: #494949; }
+  #rightMenuBox .rightMenu {
+    position: absolute;
+    top: 20%; }
+    #rightMenuBox .rightMenu .tapLogo {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/tapLogo.png);
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .tapLogo:hover {
+      background: #ff0036 url(../images/indexImg/tapLogo.png); }
+    #rightMenuBox .rightMenu .rightShopCar {
+      height: 100px;
+      width: 35px;
+      margin: 8px 0; }
+      #rightMenuBox .rightMenu .rightShopCar div {
+        height: 98px;
+        width: 25px;
+        margin: auto;
+        border-top: 1px solid #444;
+        border-bottom: 1px solid #444;
+        cursor: pointer; }
+        #rightMenuBox .rightMenu .rightShopCar div span {
+          display: block;
+          width: 35px;
+          height: 35px;
+          position: relative;
+          left: -5px;
+          background: url(../images/indexImg/rightShopCar.png); }
+        #rightMenuBox .rightMenu .rightShopCar div p {
+          width: 20px;
+          height: 50px;
+          text-align: center;
+          color: white;
+          margin: 0 auto;
+          font-weight: 600;
+          font-size: 12px; }
+    #rightMenuBox .rightMenu .rightShopCar:hover {
+      background: #ff0036; }
+      #rightMenuBox .rightMenu .rightShopCar:hover div {
+        border: none; }
+        #rightMenuBox .rightMenu .rightShopCar:hover div span {
+          background: url(../images/indexImg/rightShopCar1.png); }
+    #rightMenuBox .rightMenu .rightMoney {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/rightMoney.png);
+      margin-bottom: 10px;
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .rightMoney:hover {
+      background: #ff0036 url(../images/indexImg/rightMoney.png); }
+    #rightMenuBox .rightMenu .rightCollect {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/rightCollect.png);
+      margin-bottom: 10px;
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .rightCollect:hover {
+      background: #ff0036 url(../images/indexImg/rightCollect.png); }
+    #rightMenuBox .rightMenu .rightTime {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/rightTime.png);
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .rightTime:hover {
+      background: #ff0036 url(../images/indexImg/rightTime.png); }
+  #rightMenuBox .rightCode {
+    width: 35px;
+    height: 35px;
+    background: url(../images/indexImg/rightCode.png);
+    position: absolute;
+    bottom: 35px;
+    cursor: pointer; }
+    #rightMenuBox .rightCode .code {
+      display: none;
+      width: 155px;
+      height: 207px;
+      background: url(../images/indexImg/rightCode_bg.png);
+      position: absolute;
+      right: 35px;
+      bottom: -10px;
+      line-height: 35px;
+      text-align: center;
+      color: white;
+      font-size: 12px; }
+      #rightMenuBox .rightCode .code img:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        margin: 45px 0 0 27px; }
+      #rightMenuBox .rightCode .code img:nth-child(2) {
+        display: inline-block;
+        text-align: center; }
+      #rightMenuBox .rightCode .code .bugle {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: -6px;
+        bottom: 20px;
+        line-height: 16px;
+        font-size: 32px;
+        text-align: center;
+        color: #ff0036; }
+  #rightMenuBox .rightCode:hover {
+    background: #ff0036 url(../images/indexImg/rightCode.png); }
+
+#goTop {
+  width: 35px;
+  height: 35px;
+  background: black url(../images/indexImg/goTop.png);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: none;
+  opacity: 0; }
+  #goTop .tip {
+    display: none;
+    opacity: 0;
+    width: 90px;
+    height: 35px;
+    background: #494949;
+    position: absolute;
+    right: 70px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 12px; }
+    #goTop .tip .bugle {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -6px;
+      top: 10px;
+      line-height: 16px;
+      font-size: 32px;
+      text-align: center;
+      color: #494949; }
 
 .navBox {
   height: 37px;
@@ -695,96 +1005,3 @@ header {
               font-size: 12px;
               text-align: center;
               line-height: 22px; }
-
-footer {
-  height: 580px; }
-  footer .promiseBox {
-    height: 120px;
-    background: #f5f5f5; }
-    footer .promiseBox .promise {
-      width: 1190px;
-      margin: 0 auto; }
-  footer .phoneBox {
-    height: 300px;
-    background: linear-gradient(to right, #ff1655 20%, #ff33cc 80%); }
-    footer .phoneBox .phone {
-      width: 1190px;
-      margin: 0 auto; }
-      footer .phoneBox .phone .left {
-        float: left;
-        color: white; }
-        footer .phoneBox .phone .left img {
-          width: 213px;
-          height: 59px;
-          margin-top: 50px; }
-        footer .phoneBox .phone .left em {
-          display: block;
-          font-size: 14px;
-          height: 21px;
-          line-height: 21px;
-          font-style: normal;
-          margin-top: 50px; }
-        footer .phoneBox .phone .left i {
-          display: block;
-          font-size: 24px;
-          height: 36px;
-          line-height: 36px;
-          font-style: normal;
-          margin-top: 10px; }
-        footer .phoneBox .phone .left b {
-          display: block;
-          height: 21px;
-          line-height: 21px;
-          font-size: 14px;
-          font-weight: normal; }
-      footer .phoneBox .phone .right {
-        float: right;
-        padding-top: 50px; }
-        footer .phoneBox .phone .right p {
-          font-size: 12px;
-          color: white;
-          height: 28px;
-          line-height: 28px; }
-        footer .phoneBox .phone .right p:nth-child(1) {
-          margin-top: 5px; }
-  footer .bottomBox {
-    height: 160px;
-    background: #000; }
-    footer .bottomBox .bottom {
-      width: 1190px;
-      padding-top: 15px;
-      color: white;
-      margin: 0 auto; }
-      footer .bottomBox .bottom ul {
-        height: 35px;
-        line-height: 35px; }
-        footer .bottomBox .bottom ul li {
-          float: left; }
-          footer .bottomBox .bottom ul li a {
-            color: white;
-            font-size: 12px;
-            height: 25px;
-            line-height: 25px;
-            white-space: nowrap;
-            margin-right: 5px; }
-          footer .bottomBox .bottom ul li a:hover {
-            text-decoration: underline; }
-      footer .bottomBox .bottom ol {
-        clear: both;
-        height: 35px;
-        line-height: 35px; }
-        footer .bottomBox .bottom ol li {
-          float: left; }
-          footer .bottomBox .bottom ol li a {
-            color: white;
-            font-size: 12px;
-            height: 25px;
-            line-height: 25px;
-            white-space: nowrap;
-            padding-right: 5px;
-            padding-left: 5px;
-            border-right: 1px solid white; }
-          footer .bottomBox .bottom ol li a:hover {
-            text-decoration: underline; }
-        footer .bottomBox .bottom ol li:nth-last-child(1) a {
-          border: none; }

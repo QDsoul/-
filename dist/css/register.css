@@ -1,0 +1,1202 @@
+html,
+body,
+ul,
+ol,
+dl,
+li,
+dd,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+div,
+p,
+input,
+img {
+  margin: 0;
+  padding: 0; }
+
+a,
+u {
+  text-decoration: none;
+  color: black; }
+
+ul,
+ol,
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  display: block; }
+
+header {
+  height: 119px; }
+  header .topBox {
+    height: 26px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5; }
+    header .topBox .top {
+      width: 1190px;
+      height: 26px;
+      line-height: 26px;
+      margin: 0 auto; }
+      header .topBox .top .top_home {
+        height: 26px;
+        width: 64px;
+        font-size: 12px;
+        float: left; }
+        header .topBox .top .top_home i {
+          font-style: normal;
+          color: #FF0036; }
+        header .topBox .top .top_home a {
+          color: #999; }
+        header .topBox .top .top_home a:hover {
+          color: #FF0036;
+          text-decoration: underline; }
+      header .topBox .top > em {
+        font-style: normal;
+        font-size: 12px;
+        color: #999;
+        height: 26px;
+        display: block;
+        float: left;
+        margin-left: 20px; }
+      header .topBox .top .toLogin {
+        font-size: 12px;
+        display: block;
+        float: left;
+        font-weight: normal; }
+        header .topBox .top .toLogin a {
+          color: #999;
+          font-size: 12px;
+          padding: 0 20px; }
+        header .topBox .top .toLogin a:hover {
+          color: #FF0036;
+          text-decoration: underline; }
+      header .topBox .top ul {
+        height: 26px;
+        float: right; }
+        header .topBox .top ul li {
+          float: left;
+          font-size: 12px; }
+          header .topBox .top ul li a {
+            color: #999; }
+          header .topBox .top ul li a:hover {
+            color: #FF0036;
+            text-decoration: underline; }
+        header .topBox .top ul li:nth-child(1) {
+          padding: 0 14px 0 10px;
+          position: relative; }
+          header .topBox .top ul li:nth-child(1) a {
+            color: #999; }
+          header .topBox .top ul li:nth-child(1) span {
+            position: absolute;
+            right: 6px;
+            top: 12px;
+            width: 0;
+            height: 0;
+            border-width: 3px;
+            border-style: solid dashed dashed;
+            border-color: #bbb transparent transparent; }
+          header .topBox .top ul li:nth-child(1) p {
+            width: 74px;
+            padding: 8px 10px;
+            position: absolute;
+            border: 1px solid #eee;
+            border-top: none;
+            left: 0;
+            display: none;
+            z-index: 10;
+            background: white; }
+            header .topBox .top ul li:nth-child(1) p a:hover {
+              text-decoration: underline;
+              color: #FF0036; }
+        header .topBox .top ul li:nth-child(1):hover {
+          background: white;
+          border-bottom: 1px solid white;
+          border-right: 1px solid #eee;
+          border-left: 1px solid #eee;
+          padding: 0 13px 0 9px;
+          cursor: pointer; }
+          header .topBox .top ul li:nth-child(1):hover > a {
+            color: #FF0036;
+            text-decoration: underline; }
+          header .topBox .top ul li:nth-child(1):hover span {
+            transform: rotate(180deg);
+            transform-origin: 50% 30%;
+            transition: 0.3s; }
+          header .topBox .top ul li:nth-child(1):hover p {
+            left: -1px;
+            display: block; }
+        header .topBox .top ul li:nth-child(2) {
+          width: 74px;
+          padding: 0 10px;
+          height: 26px; }
+          header .topBox .top ul li:nth-child(2) i {
+            font-style: normal;
+            color: #FF0036;
+            margin-right: 2px; }
+          header .topBox .top ul li:nth-child(2) em {
+            font-style: normal;
+            color: #666;
+            font-weight: 900;
+            padding: 0 2px; }
+          header .topBox .top ul li:nth-child(2) a:hover em {
+            color: #FF0036; }
+        header .topBox .top ul li:nth-child(3) {
+          position: relative;
+          padding: 0 14px 0 10px; }
+          header .topBox .top ul li:nth-child(3) span {
+            position: absolute;
+            right: 6px;
+            top: 12px;
+            width: 0;
+            height: 0;
+            border-width: 3px;
+            border-style: solid dashed dashed;
+            border-color: #bbb transparent transparent; }
+          header .topBox .top ul li:nth-child(3) p {
+            position: absolute;
+            padding: 8px 10px;
+            width: 62px;
+            left: 0;
+            border: 1px solid #eee;
+            border-top: none;
+            display: none;
+            z-index: 10;
+            background: white; }
+            header .topBox .top ul li:nth-child(3) p > a {
+              display: block; }
+        header .topBox .top ul li:nth-child(3):hover {
+          border-bottom: 1px solid white;
+          border-left: 1px solid #eee;
+          border-right: 1px solid #eee;
+          background: white;
+          padding: 0 13px 0 9px;
+          cursor: pointer; }
+          header .topBox .top ul li:nth-child(3):hover span {
+            transform: rotate(180deg);
+            transform-origin: 50% 30%;
+            transition: 0.3s; }
+          header .topBox .top ul li:nth-child(3):hover > a {
+            color: #FF0036;
+            text-decoration: underline; }
+          header .topBox .top ul li:nth-child(3):hover p {
+            left: -1px;
+            display: block; }
+        header .topBox .top ul li:nth-child(4) {
+          width: 0;
+          height: 12px;
+          border-left: 1px solid #ccc;
+          position: relative;
+          top: 6px;
+          margin: 0 3px; }
+        header .topBox .top ul li:nth-child(5) {
+          padding: 0 10px; }
+          header .topBox .top ul li:nth-child(5) strong {
+            color: #FF0036; }
+        header .topBox .top ul li:nth-child(6) {
+          padding: 0 10px; }
+        header .topBox .top ul li:nth-child(7) {
+          padding: 0 14px 0 10px;
+          position: relative; }
+          header .topBox .top ul li:nth-child(7) span {
+            position: absolute;
+            right: 6px;
+            top: 12px;
+            width: 0;
+            height: 0;
+            border-width: 3px;
+            border-style: solid dashed dashed;
+            border-color: #bbb transparent transparent; }
+          header .topBox .top ul li:nth-child(7) > div {
+            width: 125px;
+            height: 165px;
+            padding: 10px;
+            position: absolute;
+            right: 0;
+            border: 1px solid #eee;
+            display: none;
+            z-index: 10;
+            background: white; }
+            header .topBox .top ul li:nth-child(7) > div dl {
+              width: 125px;
+              border-bottom: 1px dotted #666; }
+              header .topBox .top ul li:nth-child(7) > div dl dt {
+                height: 16px;
+                line-height: 16px; }
+              header .topBox .top ul li:nth-child(7) > div dl dd {
+                width: 150px; }
+                header .topBox .top ul li:nth-child(7) > div dl dd a {
+                  display: inline-block;
+                  width: 48px;
+                  margin-right: 20px;
+                  height: 16px;
+                  line-height: 16px; }
+            header .topBox .top ul li:nth-child(7) > div dl:nth-child(2) {
+              margin-top: 5px; }
+        header .topBox .top ul li:nth-child(7):hover {
+          background: white;
+          border-bottom: 1px solid white;
+          border-left: 1px solid #eee;
+          border-right: 1px solid #eee;
+          padding: 0 13px 0 9px;
+          cursor: pointer; }
+          header .topBox .top ul li:nth-child(7):hover span {
+            transform: rotate(180deg);
+            transform-origin: 50% 30%;
+            transition: 0.3s; }
+          header .topBox .top ul li:nth-child(7):hover > a {
+            color: #FF0036;
+            text-decoration: underline; }
+          header .topBox .top ul li:nth-child(7):hover > div {
+            right: -1px;
+            display: block; }
+        header .topBox .top ul li:nth-child(8) {
+          height: 26px;
+          padding: 0 14px 0 10px;
+          position: relative; }
+          header .topBox .top ul li:nth-child(8) b {
+            color: #FF0036;
+            margin-right: 3px; }
+          header .topBox .top ul li:nth-child(8) span {
+            position: absolute;
+            right: 6px;
+            top: 12px;
+            width: 0;
+            height: 0;
+            border-width: 3px;
+            border-style: solid dashed dashed;
+            border-color: #bbb transparent transparent; }
+          header .topBox .top ul li:nth-child(8) > div {
+            width: 1188px;
+            height: 275px;
+            border: 1px solid #eee;
+            position: absolute;
+            right: 0;
+            display: none;
+            background: white;
+            z-index: 10; }
+        header .topBox .top ul li:nth-child(8):hover {
+          background: white;
+          border-bottom: 1px solid white;
+          border-right: 1px solid #eee;
+          border-left: 1px solid #eee;
+          padding: 0 13px 0 9px; }
+          header .topBox .top ul li:nth-child(8):hover span {
+            transform: rotate(180deg);
+            transform-origin: 50% 30%;
+            transition: 0.3s; }
+          header .topBox .top ul li:nth-child(8):hover > div {
+            right: -1px;
+            display: block; }
+  header .bottomBox {
+    height: 92px; }
+    header .bottomBox .bottom {
+      width: 1190px;
+      height: 92px;
+      margin: 0 auto;
+      line-height: 92px; }
+      header .bottomBox .bottom img {
+        height: 40px;
+        display: inline-block;
+        vertical-align: middle; }
+      header .bottomBox .bottom form {
+        float: right;
+        width: 390px;
+        height: 30px;
+        border: 3px solid #ff1655;
+        margin-top: 25px;
+        border-right: none;
+        position: relative; }
+      header .bottomBox .bottom input[type="text"] {
+        float: left;
+        border: none;
+        padding: 5px;
+        padding-right: 3px;
+        height: 20px;
+        outline: none;
+        width: 289px; }
+      header .bottomBox .bottom input[type="submit"] {
+        float: left;
+        width: 90px;
+        height: 36px;
+        position: absolute;
+        top: -3px;
+        right: 0;
+        border: none;
+        color: white;
+        background: linear-gradient(to right, #ff1655 20%, #ff5295 80%);
+        font-size: 16px;
+        cursor: pointer; }
+
+footer {
+  height: 580px; }
+  footer .promiseBox {
+    height: 120px;
+    background: #f5f5f5; }
+    footer .promiseBox .promise {
+      width: 1190px;
+      margin: 0 auto; }
+  footer .phoneBox {
+    height: 300px;
+    background: linear-gradient(to right, #ff1655 20%, #ff33cc 80%); }
+    footer .phoneBox .phone {
+      width: 1190px;
+      margin: 0 auto; }
+      footer .phoneBox .phone .left {
+        float: left;
+        color: white; }
+        footer .phoneBox .phone .left img {
+          width: 213px;
+          height: 59px;
+          margin-top: 50px; }
+        footer .phoneBox .phone .left em {
+          display: block;
+          font-size: 14px;
+          height: 21px;
+          line-height: 21px;
+          font-style: normal;
+          margin-top: 50px; }
+        footer .phoneBox .phone .left i {
+          display: block;
+          font-size: 24px;
+          height: 36px;
+          line-height: 36px;
+          font-style: normal;
+          margin-top: 10px; }
+        footer .phoneBox .phone .left b {
+          display: block;
+          height: 21px;
+          line-height: 21px;
+          font-size: 14px;
+          font-weight: normal; }
+      footer .phoneBox .phone .right {
+        float: right;
+        padding-top: 50px; }
+        footer .phoneBox .phone .right p {
+          font-size: 12px;
+          color: white;
+          height: 28px;
+          line-height: 28px; }
+        footer .phoneBox .phone .right p:nth-child(1) {
+          margin-top: 5px; }
+  footer .bottomBox {
+    height: 160px;
+    background: #000; }
+    footer .bottomBox .bottom {
+      width: 1190px;
+      padding-top: 15px;
+      color: white;
+      margin: 0 auto; }
+      footer .bottomBox .bottom ul {
+        height: 35px;
+        line-height: 35px; }
+        footer .bottomBox .bottom ul li {
+          float: left; }
+          footer .bottomBox .bottom ul li a {
+            color: white;
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+            white-space: nowrap;
+            margin-right: 5px; }
+          footer .bottomBox .bottom ul li a:hover {
+            text-decoration: underline; }
+      footer .bottomBox .bottom ol {
+        clear: both;
+        height: 35px;
+        line-height: 35px; }
+        footer .bottomBox .bottom ol li {
+          float: left; }
+          footer .bottomBox .bottom ol li a {
+            color: white;
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+            white-space: nowrap;
+            padding-right: 5px;
+            padding-left: 5px;
+            border-right: 1px solid white; }
+          footer .bottomBox .bottom ol li a:hover {
+            text-decoration: underline; }
+        footer .bottomBox .bottom ol li:nth-last-child(1) a {
+          border: none; }
+      footer .bottomBox .bottom div p {
+        font-size: 12px;
+        color: #a4a4a4; }
+        footer .bottomBox .bottom div p a {
+          font-size: 12px;
+          color: #a4a4a4;
+          margin-right: 65px; }
+        footer .bottomBox .bottom div p a:hover {
+          text-decoration: underline; }
+        footer .bottomBox .bottom div p b {
+          color: #686868;
+          font-weight: 400; }
+      footer .bottomBox .bottom div a img {
+        width: 24px;
+        height: 24px; }
+
+#rightMenuBox {
+  width: 35px;
+  background: #000;
+  position: fixed;
+  right: 0;
+  top: 0; }
+  #rightMenuBox .tip {
+    display: none;
+    opacity: 0;
+    width: 90px;
+    height: 35px;
+    background: #494949;
+    position: absolute;
+    right: 70px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 12px; }
+    #rightMenuBox .tip .bugle {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -6px;
+      top: 10px;
+      line-height: 16px;
+      font-size: 32px;
+      text-align: center;
+      color: #494949; }
+  #rightMenuBox .rightMenu {
+    position: absolute;
+    top: 20%; }
+    #rightMenuBox .rightMenu .tapLogo {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/tapLogo.png);
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .tapLogo:hover {
+      background: #ff0036 url(../images/indexImg/tapLogo.png); }
+    #rightMenuBox .rightMenu .rightShopCar {
+      height: 100px;
+      width: 35px;
+      margin: 8px 0; }
+      #rightMenuBox .rightMenu .rightShopCar div {
+        height: 98px;
+        width: 25px;
+        margin: auto;
+        border-top: 1px solid #444;
+        border-bottom: 1px solid #444;
+        cursor: pointer; }
+        #rightMenuBox .rightMenu .rightShopCar div span {
+          display: block;
+          width: 35px;
+          height: 35px;
+          position: relative;
+          left: -5px;
+          background: url(../images/indexImg/rightShopCar.png); }
+        #rightMenuBox .rightMenu .rightShopCar div p {
+          width: 20px;
+          height: 50px;
+          text-align: center;
+          color: white;
+          margin: 0 auto;
+          font-weight: 600;
+          font-size: 12px; }
+    #rightMenuBox .rightMenu .rightShopCar:hover {
+      background: #ff0036; }
+      #rightMenuBox .rightMenu .rightShopCar:hover div {
+        border: none; }
+        #rightMenuBox .rightMenu .rightShopCar:hover div span {
+          background: url(../images/indexImg/rightShopCar1.png); }
+    #rightMenuBox .rightMenu .rightMoney {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/rightMoney.png);
+      margin-bottom: 10px;
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .rightMoney:hover {
+      background: #ff0036 url(../images/indexImg/rightMoney.png); }
+    #rightMenuBox .rightMenu .rightCollect {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/rightCollect.png);
+      margin-bottom: 10px;
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .rightCollect:hover {
+      background: #ff0036 url(../images/indexImg/rightCollect.png); }
+    #rightMenuBox .rightMenu .rightTime {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/rightTime.png);
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .rightTime:hover {
+      background: #ff0036 url(../images/indexImg/rightTime.png); }
+  #rightMenuBox .rightCode {
+    width: 35px;
+    height: 35px;
+    background: url(../images/indexImg/rightCode.png);
+    position: absolute;
+    bottom: 35px;
+    cursor: pointer; }
+    #rightMenuBox .rightCode .code {
+      display: none;
+      width: 155px;
+      height: 207px;
+      background: url(../images/indexImg/rightCode_bg.png);
+      position: absolute;
+      right: 35px;
+      bottom: -10px;
+      line-height: 35px;
+      text-align: center;
+      color: white;
+      font-size: 12px; }
+      #rightMenuBox .rightCode .code img:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        margin: 45px 0 0 27px; }
+      #rightMenuBox .rightCode .code img:nth-child(2) {
+        display: inline-block;
+        text-align: center; }
+      #rightMenuBox .rightCode .code .bugle {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: -6px;
+        bottom: 20px;
+        line-height: 16px;
+        font-size: 32px;
+        text-align: center;
+        color: #ff0036; }
+  #rightMenuBox .rightCode:hover {
+    background: #ff0036 url(../images/indexImg/rightCode.png); }
+
+#goTop {
+  width: 35px;
+  height: 35px;
+  background: black url(../images/indexImg/goTop.png);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: none;
+  opacity: 0; }
+  #goTop .tip {
+    display: none;
+    opacity: 0;
+    width: 90px;
+    height: 35px;
+    background: #494949;
+    position: absolute;
+    right: 70px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 12px; }
+    #goTop .tip .bugle {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -6px;
+      top: 10px;
+      line-height: 16px;
+      font-size: 32px;
+      text-align: center;
+      color: #494949; }
+
+header {
+  height: 35px;
+  border-bottom: 1px solid #EEE;
+  background: #f5f5f5; }
+  header .header {
+    width: 1190px;
+    margin: 0 auto;
+    font-size: 12px;
+    height: 35px;
+    line-height: 35px;
+    position: relative; }
+    header .header .left {
+      float: left; }
+      header .header .left a {
+        font-size: 12px;
+        color: #6C6C6C; }
+      header .header .left a:nth-child(1) {
+        color: #F22E00;
+        margin-right: 7px; }
+      header .header .left a:nth-child(2) {
+        margin-right: 18px; }
+      header .header .left a:hover {
+        color: #F40; }
+    header .header .right {
+      float: right; }
+      header .header .right ul li {
+        height: 35px;
+        line-height: 35px;
+        float: left;
+        padding: 0 6px; }
+        header .header .right ul li a {
+          margin-right: 7px;
+          display: block; }
+        header .header .right ul li a:hover {
+          color: #F40; }
+      header .header .right ul li:nth-child(1) a {
+        color: #F22E00; }
+      header .header .right ul li:nth-child(2),
+      header .header .right ul li:nth-child(4),
+      header .header .right ul li:nth-child(6),
+      header .header .right ul li:nth-child(7),
+      header .header .right ul li:nth-child(8) {
+        position: relative; }
+        header .header .right ul li:nth-child(2) a,
+        header .header .right ul li:nth-child(4) a,
+        header .header .right ul li:nth-child(6) a,
+        header .header .right ul li:nth-child(7) a,
+        header .header .right ul li:nth-child(8) a {
+          float: left;
+          height: 35px; }
+        header .header .right ul li:nth-child(2) span,
+        header .header .right ul li:nth-child(4) span,
+        header .header .right ul li:nth-child(6) span,
+        header .header .right ul li:nth-child(7) span,
+        header .header .right ul li:nth-child(8) span {
+          display: block;
+          float: left;
+          margin-top: 15px;
+          width: 0;
+          height: 0;
+          border-width: 3px;
+          border-style: solid dashed dashed;
+          border-color: #bbb transparent transparent; }
+        header .header .right ul li:nth-child(2) p,
+        header .header .right ul li:nth-child(4) p,
+        header .header .right ul li:nth-child(6) p,
+        header .header .right ul li:nth-child(7) p,
+        header .header .right ul li:nth-child(8) p {
+          min-height: 20px;
+          padding: 8px 0px;
+          position: absolute;
+          border: 1px solid #eee;
+          border-top: none;
+          left: 0;
+          top: 35px;
+          display: none;
+          z-index: 10;
+          background: white;
+          clear: both; }
+          header .header .right ul li:nth-child(2) p a,
+          header .header .right ul li:nth-child(4) p a,
+          header .header .right ul li:nth-child(6) p a,
+          header .header .right ul li:nth-child(7) p a,
+          header .header .right ul li:nth-child(8) p a {
+            width: 82px;
+            display: block;
+            padding: 0 5px;
+            margin: 0;
+            white-space: nowrap; }
+          header .header .right ul li:nth-child(2) p a:hover,
+          header .header .right ul li:nth-child(4) p a:hover,
+          header .header .right ul li:nth-child(6) p a:hover,
+          header .header .right ul li:nth-child(7) p a:hover,
+          header .header .right ul li:nth-child(8) p a:hover {
+            background: #eee; }
+      header .header .right ul li:nth-child(2):hover,
+      header .header .right ul li:nth-child(4):hover,
+      header .header .right ul li:nth-child(6):hover,
+      header .header .right ul li:nth-child(7):hover,
+      header .header .right ul li:nth-child(8):hover {
+        background: white;
+        border: 1px solid #eee;
+        border-top: none;
+        border-bottom: 1px solid white;
+        padding: 0 5px; }
+        header .header .right ul li:nth-child(2):hover p,
+        header .header .right ul li:nth-child(4):hover p,
+        header .header .right ul li:nth-child(6):hover p,
+        header .header .right ul li:nth-child(7):hover p,
+        header .header .right ul li:nth-child(8):hover p {
+          left: -1px;
+          display: block; }
+        header .header .right ul li:nth-child(2):hover span,
+        header .header .right ul li:nth-child(4):hover span,
+        header .header .right ul li:nth-child(6):hover span,
+        header .header .right ul li:nth-child(7):hover span,
+        header .header .right ul li:nth-child(8):hover span {
+          transform: rotate(180deg);
+          transition: 0.3s;
+          transform-origin: 50% 30%; }
+      header .header .right ul li:nth-child(3),
+      header .header .right ul li:nth-child(8) {
+        position: relative; }
+        header .header .right ul li:nth-child(3) a,
+        header .header .right ul li:nth-child(8) a {
+          float: left; }
+        header .header .right ul li:nth-child(3) i,
+        header .header .right ul li:nth-child(8) i {
+          font-style: normal;
+          color: #F40;
+          margin-right: 5px; }
+        header .header .right ul li:nth-child(3) span,
+        header .header .right ul li:nth-child(8) span {
+          display: block;
+          float: left;
+          margin-top: 15px;
+          width: 0;
+          height: 0;
+          border-width: 3px;
+          border-style: solid dashed dashed;
+          border-color: #bbb transparent transparent; }
+      header .header .right ul li:nth-child(4) {
+        position: relative; }
+        header .header .right ul li:nth-child(4) a {
+          float: left; }
+        header .header .right ul li:nth-child(4) i {
+          font-style: normal;
+          color: #9c9c9c;
+          margin-right: 5px; }
+        header .header .right ul li:nth-child(4) span {
+          display: block;
+          float: left;
+          margin-top: 15px;
+          width: 0;
+          height: 0;
+          border-width: 3px;
+          border-style: solid dashed dashed;
+          border-color: #bbb transparent transparent; }
+        header .header .right ul li:nth-child(4) p {
+          padding: 8px 0px;
+          position: absolute;
+          border: 1px solid #eee;
+          border-top: none;
+          left: 0;
+          top: 35px;
+          display: none;
+          z-index: 10;
+          background: white;
+          clear: both; }
+          header .header .right ul li:nth-child(4) p a {
+            width: 82px;
+            display: block;
+            padding: 0 5px;
+            margin: 0;
+            white-space: nowrap; }
+          header .header .right ul li:nth-child(4) p a:hover {
+            background: #eee; }
+      header .header .right ul li:nth-child(4):hover {
+        background: white;
+        padding: 0 5px;
+        border: 1px solid #eee;
+        border-top: none;
+        border-bottom: 1px solid white; }
+        header .header .right ul li:nth-child(4):hover p {
+          left: -1px; }
+        header .header .right ul li:nth-child(4):hover span {
+          transform: rotate(180deg);
+          transition: 0.3s;
+          transform-origin: 50% 30%; }
+      header .header .right ul li:nth-child(8) {
+        position: static; }
+        header .header .right ul li:nth-child(8) p {
+          width: 1190px;
+          min-height: 30px;
+          left: 0; }
+
+.logoBox {
+  height: 83px; }
+  .logoBox .logo {
+    width: 1190px;
+    height: 43px;
+    padding: 20px 0;
+    margin: 0 auto;
+    line-height: 43px; }
+    .logoBox .logo i {
+      font-size: 50px;
+      font-style: normal;
+      color: #F40;
+      float: left; }
+    .logoBox .logo b {
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 43px;
+      display: inline-block;
+      margin-left: 6px; }
+
+.stepsBox {
+  height: 48px; }
+  .stepsBox .steps {
+    width: 1190px;
+    margin: 0 auto;
+    height: 46px;
+    position: relative;
+    border-bottom: 2px solid #e6e6e6; }
+    .stepsBox .steps ul {
+      width: 720px;
+      height: 46px;
+      line-height: 46px;
+      margin: 0 auto; }
+      .stepsBox .steps ul li {
+        float: left;
+        width: 150px;
+        padding-left: 30px;
+        font-size: 16px;
+        color: #999;
+        font-weight: 700; }
+        .stepsBox .steps ul li b {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          margin-right: 5px;
+          background: url(../images/login/register_num1.png) no-repeat;
+          line-height: 24px;
+          text-align: center;
+          color: white; }
+      .stepsBox .steps ul li.active {
+        color: #3e3e3e;
+        border-bottom: 2px solid #F40; }
+        .stepsBox .steps ul li.active b {
+          background: url(../images/login/register_num2.png) no-repeat; }
+    .stepsBox .steps .language {
+      position: absolute;
+      right: 0;
+      top: 15px; }
+      .stepsBox .steps .language a {
+        display: block;
+        padding: 3px 5px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        font-size: 12px;
+        float: left; }
+      .stepsBox .steps .language a:hover {
+        color: #F40;
+        text-decoration: underline; }
+      .stepsBox .steps .language b {
+        float: left;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 24px;
+        margin: 0 5px; }
+
+.contentBox {
+  background: white; }
+  .contentBox .content {
+    padding: 50px 0;
+    width: 1190px;
+    min-height: 200px;
+    margin: 0 auto;
+    position: relative; }
+    .contentBox .content form {
+      width: 720px;
+      margin: 0 auto;
+      padding: 10px 0; }
+      .contentBox .content form .phone,
+      .contentBox .content form .validate {
+        height: 37px;
+        padding: 10px 0;
+        position: relative; }
+        .contentBox .content form .phone label,
+        .contentBox .content form .validate label {
+          width: 240px;
+          height: 37px;
+          display: block;
+          float: left;
+          text-align: right;
+          margin-right: 20px;
+          line-height: 37px; }
+        .contentBox .content form .phone .country,
+        .contentBox .content form .validate .country {
+          width: 150px;
+          height: 35px;
+          padding-left: 10px;
+          border: 1px solid #ccc;
+          border-right: none;
+          float: left;
+          position: relative;
+          cursor: pointer; }
+          .contentBox .content form .phone .country .selectCountry,
+          .contentBox .content form .validate .country .selectCountry {
+            border: none;
+            width: 150px;
+            height: 35px;
+            outline: none;
+            line-height: 35px; }
+            .contentBox .content form .phone .country .selectCountry .text b,
+            .contentBox .content form .validate .country .selectCountry .text b {
+              float: left;
+              font-size: 14px;
+              color: #3c3c3c; }
+            .contentBox .content form .phone .country .selectCountry .text strong,
+            .contentBox .content form .validate .country .selectCountry .text strong {
+              float: right;
+              font-size: 14px;
+              color: #3c3c3c;
+              margin-right: 25px; }
+            .contentBox .content form .phone .country .selectCountry > span,
+            .contentBox .content form .validate .country .selectCountry > span {
+              display: block;
+              margin-top: 15px;
+              width: 0px;
+              height: 0px;
+              border-width: 5px;
+              float: right;
+              position: absolute;
+              right: 10px;
+              border-style: solid dashed dashed;
+              border-color: #bbb transparent transparent; }
+            .contentBox .content form .phone .country .selectCountry .countryList,
+            .contentBox .content form .validate .country .selectCountry .countryList {
+              position: absolute;
+              top: 35px;
+              left: -1px;
+              background: white;
+              max-height: 180px;
+              overflow: auto;
+              border: 1px solid #ccc;
+              display: none; }
+              .contentBox .content form .phone .country .selectCountry .countryList li,
+              .contentBox .content form .validate .country .selectCountry .countryList li {
+                width: 133px;
+                height: 30px;
+                line-height: 30px;
+                padding-left: 10px;
+                font-size: 12px;
+                cursor: pointer; }
+                .contentBox .content form .phone .country .selectCountry .countryList li i,
+                .contentBox .content form .validate .country .selectCountry .countryList li i {
+                  font-style: normal; }
+                .contentBox .content form .phone .country .selectCountry .countryList li em,
+                .contentBox .content form .validate .country .selectCountry .countryList li em {
+                  float: right;
+                  margin-right: 10px;
+                  font-style: normal; }
+              .contentBox .content form .phone .country .selectCountry .countryList li.active,
+              .contentBox .content form .validate .country .selectCountry .countryList li.active {
+                background: #f40; }
+                .contentBox .content form .phone .country .selectCountry .countryList li.active a,
+                .contentBox .content form .validate .country .selectCountry .countryList li.active a {
+                  color: white; }
+              .contentBox .content form .phone .country .selectCountry .countryList li:hover,
+              .contentBox .content form .validate .country .selectCountry .countryList li:hover {
+                background: #f40; }
+                .contentBox .content form .phone .country .selectCountry .countryList li:hover a,
+                .contentBox .content form .validate .country .selectCountry .countryList li:hover a {
+                  color: white; }
+        .contentBox .content form .phone input,
+        .contentBox .content form .validate input {
+          width: 140px;
+          height: 17px;
+          padding: 9px;
+          border: 1px solid #dedede; }
+        .contentBox .content form .phone > p.tip,
+        .contentBox .content form .validate > p.tip {
+          position: absolute;
+          top: 16px;
+          left: 600px;
+          font-size: 14px; }
+        .contentBox .content form .phone #validate,
+        .contentBox .content form .validate #validate {
+          height: 32px;
+          width: 300px;
+          background: #eee;
+          float: left;
+          position: relative;
+          cursor: pointer; }
+          .contentBox .content form .phone #validate .block,
+          .contentBox .content form .validate #validate .block {
+            width: 40px;
+            height: 32px;
+            background: white;
+            border: 1px solid #ccc;
+            position: absolute;
+            top: -1px;
+            line-height: 32px;
+            text-align: center;
+            color: #ccc;
+            cursor: move;
+            z-index: 10; }
+          .contentBox .content form .phone #validate .progracess,
+          .contentBox .content form .validate #validate .progracess {
+            height: 32px;
+            width: 0px;
+            background: #76c61d;
+            position: absolute;
+            left: 0;
+            top: 0; }
+          .contentBox .content form .phone #validate p,
+          .contentBox .content form .validate #validate p {
+            height: 32px;
+            width: 300px;
+            line-height: 32px;
+            font-size: 12px;
+            text-align: center;
+            color: #666;
+            position: absolute;
+            z-index: 5; }
+      .contentBox .content form input[type="submit"] {
+        width: 180px;
+        height: 36px;
+        margin-left: 260px;
+        border: none;
+        color: #999;
+        background: #ededed;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 20px;
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none; }
+      .contentBox .content form input[type="submit"].active {
+        background: #ff4001;
+        color: white; }
+      .contentBox .content form input[type="submit"]:hover {
+        color: white; }
+      .contentBox .content form > a {
+        display: block;
+        width: 108px;
+        margin-left: 260px;
+        font-size: 12px;
+        margin-top: 20px;
+        color: #f40; }
+      .contentBox .content form > a:hover {
+        text-decoration: underline; }
+    .contentBox .content .phoneMsg {
+      width: 680px;
+      height: 278px;
+      padding: 20px;
+      border: 2px solid #dedede;
+      border-top: 2px solid #ff4a00;
+      position: absolute;
+      top: 45px;
+      left: 50%;
+      margin-left: -340px;
+      background: white;
+      z-index: 100;
+      display: none; }
+      .contentBox .content .phoneMsg h4 span {
+        display: block;
+        float: right;
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #DDD;
+        cursor: pointer; }
+      .contentBox .content .phoneMsg p {
+        color: #3e3e3e;
+        font-size: 12px;
+        margin-top: 20px; }
+      .contentBox .content .phoneMsg div b {
+        width: 240px;
+        height: 37px;
+        line-height: 37px;
+        display: block;
+        float: left;
+        text-align: right;
+        margin-right: 20px;
+        font-weight: normal; }
+      .contentBox .content .phoneMsg div strong {
+        height: 37px;
+        display: block;
+        float: left;
+        line-height: 37px;
+        font-weight: normal; }
+      .contentBox .content .phoneMsg .phone1 {
+        height: 37px;
+        padding: 10px 0;
+        margin-top: 10px;
+        font-size: 14px; }
+      .contentBox .content .phoneMsg .validate1 {
+        font-size: 14px;
+        height: 37px;
+        clear: both;
+        padding: 10px 0; }
+        .contentBox .content .phoneMsg .validate1 input[type="text"] {
+          width: 82px;
+          height: 17px;
+          padding: 9px;
+          border: 1px solid #dedede;
+          float: left; }
+        .contentBox .content .phoneMsg .validate1 input[type="button"] {
+          width: 110px;
+          height: 36px;
+          padding: 0 5px;
+          border: 1px solid #d0d0d0;
+          border-radius: 3px;
+          float: left;
+          margin-left: 5px;
+          cursor: pointer; }
+        .contentBox .content .phoneMsg .validate1 input[type="button"]:hover {
+          background: #d0d0d0;
+          color: white; }
+      .contentBox .content .phoneMsg span {
+        display: block;
+        padding-left: 260px;
+        clear: both;
+        font-size: 12px; }
+        .contentBox .content .phoneMsg span i {
+          font-style: normal;
+          color: #6bc827;
+          font-size: 14px;
+          margin-right: 3px; }
+      .contentBox .content .phoneMsg input[type="submit"] {
+        width: 100px;
+        height: 36px;
+        padding: 0 20px;
+        margin: 20px auto 0;
+        border: none;
+        font-size: 16px;
+        color: white;
+        display: block;
+        background: #ff4001;
+        border-radius: 3px;
+        cursor: pointer; }
+
+.footerBox {
+  height: 171px; }
+  .footerBox .footer {
+    height: 154px;
+    width: 1190px;
+    margin: 60px auto 0;
+    padding: 7px 0 9px 0;
+    border-top: 1px solid #ddd; }
+    .footerBox .footer p {
+      height: 27px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ddd; }
+      .footerBox .footer p a {
+        font-size: 12px;
+        color: #6c6c6c;
+        padding: 0 6px;
+        border-right: 1px solid #ddd; }
+      .footerBox .footer p a:nth-last-child(1) {
+        border: none; }
+      .footerBox .footer p a:hover {
+        color: #f40; }
+    .footerBox .footer ul {
+      margin-top: 8px;
+      float: left;
+      margin-bottom: 8px; }
+      .footerBox .footer ul li {
+        float: left;
+        margin: 0 4px; }
+        .footerBox .footer ul li a {
+          font-size: 12px;
+          color: #6c6c6c; }
+        .footerBox .footer ul li a:hover {
+          color: #f40; }
+    .footerBox .footer b {
+      float: left;
+      margin-top: 8px;
+      font-size: 12px;
+      margin-left: 30px;
+      color: #9c9c9c;
+      font-weight: normal; }
+    .footerBox .footer span {
+      display: block;
+      font-size: 12px;
+      color: #9c9c9c;
+      clear: both; }
