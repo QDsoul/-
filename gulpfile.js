@@ -46,9 +46,25 @@ gulp.task("scssRegister", function () {
         .pipe(connect.reload());
 })
 
+gulp.task("scssProduct", function () {
+    return gulp.src("stylesheet/product.scss")
+        .pipe(scss())
+        .pipe(gulp.dest("dist/css"))
+        .pipe(minifyCss())
+        .pipe(rename("product_min.css"))
+        .pipe(gulp.dest("dist/css"))
+        .pipe(connect.reload());
+})
+
 gulp.task("iconfont", function(){
     return gulp.src("iconfont/**/*")
     .pipe(gulp.dest("dist/iconfont"))
+    .pipe(connect.reload());
+})
+
+gulp.task("php", function(){
+    return gulp.src("*.php")
+    .pipe(gulp.dest("dist/php"))
     .pipe(connect.reload());
 })
 
@@ -64,7 +80,7 @@ gulp.task("data", function () {
         .pipe(connect.reload());
 })
 
-gulp.task("build", ["copyHtml", "javascript", "scssIndex", "scssLogin", "scssRegister", "image", "data", "iconfont"]);
+gulp.task("build", ["copyHtml", "javascript", "scssIndex", "scssLogin", "scssRegister", "scssProduct", "image", "data", "iconfont", "php"]);
 
 const connect = require("gulp-connect");
 
@@ -82,9 +98,11 @@ gulp.task("watch", function () {
     gulp.watch("stylesheet/index.scss", ["scssIndex"]);
     gulp.watch("stylesheet/login.scss", ["scssLogin"]);
     gulp.watch("stylesheet/register.scss", ["scssRegister"]);
+    gulp.watch("stylesheet/product.scss", ["scssProduct"]);
     gulp.watch("images/**/*",[ "image"]);
     gulp.watch(["*.json", "!package.json", "!package-lock.json"], ["data"]);
     gulp.watch("iconfont/**/*",[ "iconfont"]);
+    gulp.watch("*.php", ["php"]);
 })
 
 gulp.task("default", ["watch", "server"]);

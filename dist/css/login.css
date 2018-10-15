@@ -701,7 +701,20 @@ header {
       .bannerBox .banner .login h4 {
         padding: 8px 0;
         color: #3c3c3c;
-        font-size: 16px; }
+        font-size: 16px;
+        height: 37px; }
+      .bannerBox .banner .login .tip {
+        color: #6C6C6C;
+        position: absolute;
+        top: 45px;
+        height: 16px;
+        border: 1px solid #ffb4a8;
+        padding: 6px 20px;
+        background: #fef2f2;
+        font-size: 14px;
+        line-height: 16px;
+        width: 258px;
+        display: none; }
       .bannerBox .banner .login img {
         margin: 24px auto 0; }
       .bannerBox .banner .login span {
@@ -758,7 +771,8 @@ header {
           font-weight: 600;
           border: none;
           margin-top: 20px;
-          font-size: 16px; }
+          font-size: 16px;
+          cursor: pointer; }
       .bannerBox .banner .login .othersWay {
         margin-top: 20px; }
         .bannerBox .banner .login .othersWay a {

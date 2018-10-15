@@ -7,7 +7,8 @@ require.config({
         "index" : "index",
         "login" : "login",
         "register" : "register",
-        "drag" : "drag"
+        "drag" : "drag",
+        "product" : "product"
     },
 
     shim:{
@@ -15,8 +16,9 @@ require.config({
     }
 })
 
-require(["index", "login", "register"], function(index, login, register){
+require(["index", "login", "register", "product"], function(index, login, register, product){
     index.index();
     login.login();
     register.register();
+    product.product();
 })

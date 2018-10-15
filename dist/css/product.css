@@ -1,0 +1,839 @@
+html,
+body,
+ul,
+ol,
+dl,
+li,
+dd,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+div,
+p,
+input,
+img {
+  margin: 0;
+  padding: 0; }
+
+a,
+u {
+  text-decoration: none;
+  color: black; }
+
+ul,
+ol,
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  display: block; }
+
+header {
+  height: 119px; }
+  header .topBox {
+    height: 26px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e5e5e5; }
+    header .topBox .top {
+      width: 1190px;
+      height: 26px;
+      line-height: 26px;
+      margin: 0 auto; }
+      header .topBox .top .top_home {
+        height: 26px;
+        width: 64px;
+        font-size: 12px;
+        float: left; }
+        header .topBox .top .top_home i {
+          font-style: normal;
+          color: #FF0036; }
+        header .topBox .top .top_home a {
+          color: #999; }
+        header .topBox .top .top_home a:hover {
+          color: #FF0036;
+          text-decoration: underline; }
+      header .topBox .top > em {
+        font-style: normal;
+        font-size: 12px;
+        color: #999;
+        height: 26px;
+        display: block;
+        float: left;
+        margin-left: 20px; }
+      header .topBox .top .toLogin {
+        font-size: 12px;
+        display: block;
+        float: left;
+        font-weight: normal; }
+        header .topBox .top .toLogin a {
+          color: #999;
+          font-size: 12px;
+          padding: 0 20px; }
+        header .topBox .top .toLogin a:hover {
+          color: #FF0036;
+          text-decoration: underline; }
+      header .topBox .top ul {
+        height: 26px;
+        float: right; }
+        header .topBox .top ul li {
+          float: left;
+          font-size: 12px; }
+          header .topBox .top ul li a {
+            color: #999; }
+          header .topBox .top ul li a:hover {
+            color: #FF0036;
+            text-decoration: underline; }
+        header .topBox .top ul li:nth-child(1) {
+          padding: 0 14px 0 10px;
+          position: relative; }
+          header .topBox .top ul li:nth-child(1) a {
+            color: #999; }
+          header .topBox .top ul li:nth-child(1) span {
+            position: absolute;
+            right: 6px;
+            top: 12px;
+            width: 0;
+            height: 0;
+            border-width: 3px;
+            border-style: solid dashed dashed;
+            border-color: #bbb transparent transparent; }
+          header .topBox .top ul li:nth-child(1) p {
+            width: 74px;
+            padding: 8px 10px;
+            position: absolute;
+            border: 1px solid #eee;
+            border-top: none;
+            left: 0;
+            display: none;
+            z-index: 10;
+            background: white; }
+            header .topBox .top ul li:nth-child(1) p a:hover {
+              text-decoration: underline;
+              color: #FF0036; }
+        header .topBox .top ul li:nth-child(1):hover {
+          background: white;
+          border-bottom: 1px solid white;
+          border-right: 1px solid #eee;
+          border-left: 1px solid #eee;
+          padding: 0 13px 0 9px;
+          cursor: pointer; }
+          header .topBox .top ul li:nth-child(1):hover > a {
+            color: #FF0036;
+            text-decoration: underline; }
+          header .topBox .top ul li:nth-child(1):hover span {
+            transform: rotate(180deg);
+            transform-origin: 50% 30%;
+            transition: 0.3s; }
+          header .topBox .top ul li:nth-child(1):hover p {
+            left: -1px;
+            display: block; }
+        header .topBox .top ul li:nth-child(2) {
+          width: 74px;
+          padding: 0 10px;
+          height: 26px; }
+          header .topBox .top ul li:nth-child(2) i {
+            font-style: normal;
+            color: #FF0036;
+            margin-right: 2px; }
+          header .topBox .top ul li:nth-child(2) em {
+            font-style: normal;
+            color: #666;
+            font-weight: 900;
+            padding: 0 2px; }
+          header .topBox .top ul li:nth-child(2) a:hover em {
+            color: #FF0036; }
+        header .topBox .top ul li:nth-child(3) {
+          position: relative;
+          padding: 0 14px 0 10px; }
+          header .topBox .top ul li:nth-child(3) span {
+            position: absolute;
+            right: 6px;
+            top: 12px;
+            width: 0;
+            height: 0;
+            border-width: 3px;
+            border-style: solid dashed dashed;
+            border-color: #bbb transparent transparent; }
+          header .topBox .top ul li:nth-child(3) p {
+            position: absolute;
+            padding: 8px 10px;
+            width: 62px;
+            left: 0;
+            border: 1px solid #eee;
+            border-top: none;
+            display: none;
+            z-index: 10;
+            background: white; }
+            header .topBox .top ul li:nth-child(3) p > a {
+              display: block; }
+        header .topBox .top ul li:nth-child(3):hover {
+          border-bottom: 1px solid white;
+          border-left: 1px solid #eee;
+          border-right: 1px solid #eee;
+          background: white;
+          padding: 0 13px 0 9px;
+          cursor: pointer; }
+          header .topBox .top ul li:nth-child(3):hover span {
+            transform: rotate(180deg);
+            transform-origin: 50% 30%;
+            transition: 0.3s; }
+          header .topBox .top ul li:nth-child(3):hover > a {
+            color: #FF0036;
+            text-decoration: underline; }
+          header .topBox .top ul li:nth-child(3):hover p {
+            left: -1px;
+            display: block; }
+        header .topBox .top ul li:nth-child(4) {
+          width: 0;
+          height: 12px;
+          border-left: 1px solid #ccc;
+          position: relative;
+          top: 6px;
+          margin: 0 3px; }
+        header .topBox .top ul li:nth-child(5) {
+          padding: 0 10px; }
+          header .topBox .top ul li:nth-child(5) strong {
+            color: #FF0036; }
+        header .topBox .top ul li:nth-child(6) {
+          padding: 0 10px; }
+        header .topBox .top ul li:nth-child(7) {
+          padding: 0 14px 0 10px;
+          position: relative; }
+          header .topBox .top ul li:nth-child(7) span {
+            position: absolute;
+            right: 6px;
+            top: 12px;
+            width: 0;
+            height: 0;
+            border-width: 3px;
+            border-style: solid dashed dashed;
+            border-color: #bbb transparent transparent; }
+          header .topBox .top ul li:nth-child(7) > div {
+            width: 125px;
+            height: 165px;
+            padding: 10px;
+            position: absolute;
+            right: 0;
+            border: 1px solid #eee;
+            display: none;
+            z-index: 10;
+            background: white; }
+            header .topBox .top ul li:nth-child(7) > div dl {
+              width: 125px;
+              border-bottom: 1px dotted #666; }
+              header .topBox .top ul li:nth-child(7) > div dl dt {
+                height: 16px;
+                line-height: 16px; }
+              header .topBox .top ul li:nth-child(7) > div dl dd {
+                width: 150px; }
+                header .topBox .top ul li:nth-child(7) > div dl dd a {
+                  display: inline-block;
+                  width: 48px;
+                  margin-right: 20px;
+                  height: 16px;
+                  line-height: 16px; }
+            header .topBox .top ul li:nth-child(7) > div dl:nth-child(2) {
+              margin-top: 5px; }
+        header .topBox .top ul li:nth-child(7):hover {
+          background: white;
+          border-bottom: 1px solid white;
+          border-left: 1px solid #eee;
+          border-right: 1px solid #eee;
+          padding: 0 13px 0 9px;
+          cursor: pointer; }
+          header .topBox .top ul li:nth-child(7):hover span {
+            transform: rotate(180deg);
+            transform-origin: 50% 30%;
+            transition: 0.3s; }
+          header .topBox .top ul li:nth-child(7):hover > a {
+            color: #FF0036;
+            text-decoration: underline; }
+          header .topBox .top ul li:nth-child(7):hover > div {
+            right: -1px;
+            display: block; }
+        header .topBox .top ul li:nth-child(8) {
+          height: 26px;
+          padding: 0 14px 0 10px;
+          position: relative; }
+          header .topBox .top ul li:nth-child(8) b {
+            color: #FF0036;
+            margin-right: 3px; }
+          header .topBox .top ul li:nth-child(8) span {
+            position: absolute;
+            right: 6px;
+            top: 12px;
+            width: 0;
+            height: 0;
+            border-width: 3px;
+            border-style: solid dashed dashed;
+            border-color: #bbb transparent transparent; }
+          header .topBox .top ul li:nth-child(8) > div {
+            width: 1188px;
+            height: 275px;
+            border: 1px solid #eee;
+            position: absolute;
+            right: 0;
+            display: none;
+            background: white;
+            z-index: 10; }
+        header .topBox .top ul li:nth-child(8):hover {
+          background: white;
+          border-bottom: 1px solid white;
+          border-right: 1px solid #eee;
+          border-left: 1px solid #eee;
+          padding: 0 13px 0 9px; }
+          header .topBox .top ul li:nth-child(8):hover span {
+            transform: rotate(180deg);
+            transform-origin: 50% 30%;
+            transition: 0.3s; }
+          header .topBox .top ul li:nth-child(8):hover > div {
+            right: -1px;
+            display: block; }
+  header .bottomBox {
+    height: 92px; }
+    header .bottomBox .bottom {
+      width: 1190px;
+      height: 92px;
+      margin: 0 auto;
+      line-height: 92px; }
+      header .bottomBox .bottom img {
+        height: 40px;
+        display: inline-block;
+        vertical-align: middle; }
+      header .bottomBox .bottom form {
+        float: right;
+        width: 390px;
+        height: 30px;
+        border: 3px solid #ff1655;
+        margin-top: 25px;
+        border-right: none;
+        position: relative; }
+      header .bottomBox .bottom input[type="text"] {
+        float: left;
+        border: none;
+        padding: 5px;
+        padding-right: 3px;
+        height: 20px;
+        outline: none;
+        width: 289px; }
+      header .bottomBox .bottom input[type="submit"] {
+        float: left;
+        width: 90px;
+        height: 36px;
+        position: absolute;
+        top: -3px;
+        right: 0;
+        border: none;
+        color: white;
+        background: linear-gradient(to right, #ff1655 20%, #ff5295 80%);
+        font-size: 16px;
+        cursor: pointer; }
+
+footer {
+  height: 580px; }
+  footer .promiseBox {
+    height: 120px;
+    background: #f5f5f5; }
+    footer .promiseBox .promise {
+      width: 1190px;
+      margin: 0 auto; }
+  footer .phoneBox {
+    height: 300px;
+    background: linear-gradient(to right, #ff1655 20%, #ff33cc 80%); }
+    footer .phoneBox .phone {
+      width: 1190px;
+      margin: 0 auto; }
+      footer .phoneBox .phone .left {
+        float: left;
+        color: white; }
+        footer .phoneBox .phone .left img {
+          width: 213px;
+          height: 59px;
+          margin-top: 50px; }
+        footer .phoneBox .phone .left em {
+          display: block;
+          font-size: 14px;
+          height: 21px;
+          line-height: 21px;
+          font-style: normal;
+          margin-top: 50px; }
+        footer .phoneBox .phone .left i {
+          display: block;
+          font-size: 24px;
+          height: 36px;
+          line-height: 36px;
+          font-style: normal;
+          margin-top: 10px; }
+        footer .phoneBox .phone .left b {
+          display: block;
+          height: 21px;
+          line-height: 21px;
+          font-size: 14px;
+          font-weight: normal; }
+      footer .phoneBox .phone .right {
+        float: right;
+        padding-top: 50px; }
+        footer .phoneBox .phone .right p {
+          font-size: 12px;
+          color: white;
+          height: 28px;
+          line-height: 28px; }
+        footer .phoneBox .phone .right p:nth-child(1) {
+          margin-top: 5px; }
+  footer .bottomBox {
+    height: 160px;
+    background: #000; }
+    footer .bottomBox .bottom {
+      width: 1190px;
+      padding-top: 15px;
+      color: white;
+      margin: 0 auto; }
+      footer .bottomBox .bottom ul {
+        height: 35px;
+        line-height: 35px; }
+        footer .bottomBox .bottom ul li {
+          float: left; }
+          footer .bottomBox .bottom ul li a {
+            color: white;
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+            white-space: nowrap;
+            margin-right: 5px; }
+          footer .bottomBox .bottom ul li a:hover {
+            text-decoration: underline; }
+      footer .bottomBox .bottom ol {
+        clear: both;
+        height: 35px;
+        line-height: 35px; }
+        footer .bottomBox .bottom ol li {
+          float: left; }
+          footer .bottomBox .bottom ol li a {
+            color: white;
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+            white-space: nowrap;
+            padding-right: 5px;
+            padding-left: 5px;
+            border-right: 1px solid white; }
+          footer .bottomBox .bottom ol li a:hover {
+            text-decoration: underline; }
+        footer .bottomBox .bottom ol li:nth-last-child(1) a {
+          border: none; }
+      footer .bottomBox .bottom div p {
+        font-size: 12px;
+        color: #a4a4a4; }
+        footer .bottomBox .bottom div p a {
+          font-size: 12px;
+          color: #a4a4a4;
+          margin-right: 65px; }
+        footer .bottomBox .bottom div p a:hover {
+          text-decoration: underline; }
+        footer .bottomBox .bottom div p b {
+          color: #686868;
+          font-weight: 400; }
+      footer .bottomBox .bottom div a img {
+        width: 24px;
+        height: 24px; }
+
+#rightMenuBox {
+  width: 35px;
+  background: #000;
+  position: fixed;
+  right: 0;
+  top: 0; }
+  #rightMenuBox .tip {
+    display: none;
+    opacity: 0;
+    width: 90px;
+    height: 35px;
+    background: #494949;
+    position: absolute;
+    right: 70px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 12px; }
+    #rightMenuBox .tip .bugle {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -6px;
+      top: 10px;
+      line-height: 16px;
+      font-size: 32px;
+      text-align: center;
+      color: #494949; }
+  #rightMenuBox .rightMenu {
+    position: absolute;
+    top: 20%; }
+    #rightMenuBox .rightMenu .tapLogo {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/tapLogo.png);
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .tapLogo:hover {
+      background: #ff0036 url(../images/indexImg/tapLogo.png); }
+    #rightMenuBox .rightMenu .rightShopCar {
+      height: 100px;
+      width: 35px;
+      margin: 8px 0; }
+      #rightMenuBox .rightMenu .rightShopCar div {
+        height: 98px;
+        width: 25px;
+        margin: auto;
+        border-top: 1px solid #444;
+        border-bottom: 1px solid #444;
+        cursor: pointer; }
+        #rightMenuBox .rightMenu .rightShopCar div span {
+          display: block;
+          width: 35px;
+          height: 35px;
+          position: relative;
+          left: -5px;
+          background: url(../images/indexImg/rightShopCar.png); }
+        #rightMenuBox .rightMenu .rightShopCar div p {
+          width: 20px;
+          height: 50px;
+          text-align: center;
+          color: white;
+          margin: 0 auto;
+          font-weight: 600;
+          font-size: 12px; }
+    #rightMenuBox .rightMenu .rightShopCar:hover {
+      background: #ff0036; }
+      #rightMenuBox .rightMenu .rightShopCar:hover div {
+        border: none; }
+        #rightMenuBox .rightMenu .rightShopCar:hover div span {
+          background: url(../images/indexImg/rightShopCar1.png); }
+    #rightMenuBox .rightMenu .rightMoney {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/rightMoney.png);
+      margin-bottom: 10px;
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .rightMoney:hover {
+      background: #ff0036 url(../images/indexImg/rightMoney.png); }
+    #rightMenuBox .rightMenu .rightCollect {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/rightCollect.png);
+      margin-bottom: 10px;
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .rightCollect:hover {
+      background: #ff0036 url(../images/indexImg/rightCollect.png); }
+    #rightMenuBox .rightMenu .rightTime {
+      width: 35px;
+      height: 35px;
+      background: url(../images/indexImg/rightTime.png);
+      cursor: pointer; }
+    #rightMenuBox .rightMenu .rightTime:hover {
+      background: #ff0036 url(../images/indexImg/rightTime.png); }
+  #rightMenuBox .rightCode {
+    width: 35px;
+    height: 35px;
+    background: url(../images/indexImg/rightCode.png);
+    position: absolute;
+    bottom: 35px;
+    cursor: pointer; }
+    #rightMenuBox .rightCode .code {
+      display: none;
+      width: 155px;
+      height: 207px;
+      background: url(../images/indexImg/rightCode_bg.png);
+      position: absolute;
+      right: 35px;
+      bottom: -10px;
+      line-height: 35px;
+      text-align: center;
+      color: white;
+      font-size: 12px; }
+      #rightMenuBox .rightCode .code img:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        margin: 45px 0 0 27px; }
+      #rightMenuBox .rightCode .code img:nth-child(2) {
+        display: inline-block;
+        text-align: center; }
+      #rightMenuBox .rightCode .code .bugle {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: -6px;
+        bottom: 20px;
+        line-height: 16px;
+        font-size: 32px;
+        text-align: center;
+        color: #ff0036; }
+  #rightMenuBox .rightCode:hover {
+    background: #ff0036 url(../images/indexImg/rightCode.png); }
+
+#goTop {
+  width: 35px;
+  height: 35px;
+  background: black url(../images/indexImg/goTop.png);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: none;
+  opacity: 0; }
+  #goTop .tip {
+    display: none;
+    opacity: 0;
+    width: 90px;
+    height: 35px;
+    background: #494949;
+    position: absolute;
+    right: 70px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 12px; }
+    #goTop .tip .bugle {
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      right: -6px;
+      top: 10px;
+      line-height: 16px;
+      font-size: 32px;
+      text-align: center;
+      color: #494949; }
+
+.navBox {
+  height: 37px;
+  border-bottom: 1px solid #7a45e5; }
+  .navBox nav {
+    height: 37px;
+    width: 1190px;
+    margin: 0 auto; }
+    .navBox nav p {
+      width: 180px;
+      height: 38px;
+      padding-left: 20px;
+      background: black;
+      color: white;
+      line-height: 38px;
+      font-size: 14px;
+      float: left; }
+    .navBox nav ul {
+      float: left;
+      height: 37px;
+      padding-left: 40px; }
+      .navBox nav ul li {
+        float: left; }
+        .navBox nav ul li a {
+          height: 37px;
+          line-height: 37px;
+          margin-right: 40px;
+          font-size: 14px; }
+        .navBox nav ul li a:hover {
+          color: #ff195a; }
+    .navBox nav > a {
+      float: right;
+      font-size: 14px;
+      line-height: 37px;
+      margin-right: 40px; }
+    .navBox nav > a:hover {
+      text-decoration: underline; }
+
+.contentBox {
+  background: white; }
+  .contentBox .content {
+    width: 1190px;
+    margin: 0 auto; }
+    .contentBox .content .detailBox {
+      min-height: 600px;
+      width: 990px; }
+      .contentBox .content .detailBox .detail {
+        min-height: 600px;
+        width: 990px;
+        margin-top: 20px;
+        overflow: hidden; }
+        .contentBox .content .detailBox .detail .left {
+          width: 460px;
+          float: left;
+          min-height: 600px; }
+          .contentBox .content .detailBox .detail .left .productImg {
+            width: 460px;
+            margin-top: 20px; }
+            .contentBox .content .detailBox .detail .left .productImg img {
+              width: 418px;
+              height: 418px;
+              margin: 0 auto; }
+          .contentBox .content .detailBox .detail .left .productImg_t {
+            height: 60px;
+            width: 460px;
+            padding-top: 22px;
+            text-align: center; }
+            .contentBox .content .detailBox .detail .left .productImg_t img {
+              width: 60px;
+              height: 60px;
+              display: inline-block;
+              margin-left: 16px; }
+          .contentBox .content .detailBox .detail .left .operation {
+            padding: 38px 40px 25px;
+            font-size: 12px; }
+            .contentBox .content .detailBox .detail .left .operation i, .contentBox .content .detailBox .detail .left .operation em {
+              font-style: normal;
+              color: #999;
+              margin-right: 30px; }
+        .contentBox .content .detailBox .detail .right {
+          width: 530px;
+          float: right;
+          min-height: 600px;
+          overflow: hidden; }
+          .contentBox .content .detailBox .detail .right .productInfo {
+            margin-top: 20px;
+            width: 530px; }
+            .contentBox .content .detailBox .detail .right .productInfo h4 {
+              font-size: 16px;
+              font-weight: 700;
+              padding: 0 10px; }
+            .contentBox .content .detailBox .detail .right .productInfo p {
+              color: #FF0036;
+              font-size: 14px;
+              padding: 0 10px;
+              margin-bottom: 12px; }
+            .contentBox .content .detailBox .detail .right .productInfo .price {
+              height: 31px;
+              padding: 5px 0;
+              line-height: 31px;
+              background: url(../images/product/price_bg.png); }
+              .contentBox .content .detailBox .detail .right .productInfo .price b {
+                font-size: 12px;
+                font-weight: normal;
+                color: #999;
+                margin-left: 8px; }
+              .contentBox .content .detailBox .detail .right .productInfo .price strong {
+                font-size: 24px;
+                color: #FF0036;
+                margin-left: 50px; }
+            .contentBox .content .detailBox .detail .right .productInfo .freight {
+              height: 37px;
+              width: 510px;
+              line-height: 37px;
+              padding: 5px 0; }
+              .contentBox .content .detailBox .detail .right .productInfo .freight b {
+                font-size: 12px;
+                font-weight: normal;
+                color: #999;
+                margin-left: 8px; }
+            .contentBox .content .detailBox .detail .right .productInfo .evaluation {
+              width: 510px;
+              height: 16px;
+              padding: 10px 0;
+              text-align: center;
+              border: 1px dotted #c9c9c9;
+              border-right: none;
+              border-right: none;
+              line-height: 16px;
+              font-size: 12px;
+              color: #999; }
+              .contentBox .content .detailBox .detail .right .productInfo .evaluation strong {
+                color: #FF0036;
+                margin-left: 3px; }
+            .contentBox .content .detailBox .detail .right .productInfo .division {
+              padding-left: 10px;
+              padding-top: 16px; }
+              .contentBox .content .detailBox .detail .right .productInfo .division dl {
+                height: 45px;
+                line-height: 45px;
+                padding-bottom: 6px; }
+                .contentBox .content .detailBox .detail .right .productInfo .division dl dt {
+                  width: 66px;
+                  float: left;
+                  font-size: 12px;
+                  color: #999; }
+                .contentBox .content .detailBox .detail .right .productInfo .division dl dd {
+                  float: left; }
+                  .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul {
+                    height: 46px; }
+                    .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul li {
+                      height: 38px;
+                      margin-top: 5px;
+                      cursor: pointer;
+                      float: left;
+                      margin-right: 4px;
+                      padding: 1px; }
+                      .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul li img {
+                        display: inline-block;
+                        width: 38px;
+                        height: 38px;
+                        border: 1px solid #b8b7bd; }
+                    .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul li:hover {
+                      padding: 0; }
+                      .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul li:hover img {
+                        border: 2px solid #FF0036; }
+                  .contentBox .content .detailBox .detail .right .productInfo .division dl dd ol li {
+                    padding: 1px;
+                    cursor: pointer; }
+                    .contentBox .content .detailBox .detail .right .productInfo .division dl dd ol li b {
+                      display: block;
+                      height: 28px;
+                      line-height: 28px;
+                      margin-top: 9px;
+                      padding: 0 9px;
+                      font-size: 12px;
+                      font-weight: normal;
+                      border: 1px solid #b8b7bd; }
+                  .contentBox .content .detailBox .detail .right .productInfo .division dl dd ol li:hover {
+                    padding: 0; }
+                    .contentBox .content .detailBox .detail .right .productInfo .division dl dd ol li:hover b {
+                      border: 2px solid #FF0036; }
+              .contentBox .content .detailBox .detail .right .productInfo .division dl:nth-child(3) {
+                height: 36px;
+                line-height: 36px; }
+                .contentBox .content .detailBox .detail .right .productInfo .division dl:nth-child(3) dd {
+                  font-size: 12px;
+                  color: #999; }
+                  .contentBox .content .detailBox .detail .right .productInfo .division dl:nth-child(3) dd input {
+                    width: 36px;
+                    height: 30px;
+                    border: 1px solid #a7a6ac;
+                    outline: none;
+                    float: left;
+                    text-align: center;
+                    color: #666;
+                    font-size: 12px; }
+                  .contentBox .content .detailBox .detail .right .productInfo .division dl:nth-child(3) dd .num {
+                    width: 18px;
+                    height: 32px;
+                    float: left;
+                    margin-left: 3px;
+                    margin-right: 10px; }
+                    .contentBox .content .detailBox .detail .right .productInfo .division dl:nth-child(3) dd .num span {
+                      display: block;
+                      height: 12px;
+                      width: 16px;
+                      border: 1px solid #a7a6ab;
+                      line-height: 12px;
+                      text-align: center;
+                      font-size: 12px;
+                      margin-bottom: 4px; }
+              .contentBox .content .detailBox .detail .right .productInfo .division input:nth-of-type(1) {
+                width: 178px;
+                height: 38px;
+                border: 1px solid #FF0036;
+                color: #FF0036;
+                background: #ffeded;
+                cursor: pointer;
+                font-size: 16px; }
+              .contentBox .content .detailBox .detail .right .productInfo .division input:nth-of-type(2) {
+                width: 178px;
+                height: 38px;
+                border: 1px solid #FF0036;
+                color: #FF0036;
+                background: #ff0036;
+                cursor: pointer;
+                color: white;
+                font-size: 16px; }

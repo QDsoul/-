@@ -1,0 +1,296 @@
+// 重置样式
+// // 公共样式
+@import "base";
+
+
+.navBox {
+    height: 37px;
+    border-bottom: 1px solid #7a45e5;
+
+    nav {
+        height: 37px;
+        width: 1190px;
+        margin: 0 auto;
+
+        p {
+            width: 180px;
+            height: 38px;
+            padding-left: 20px;
+            background: black;
+            color: white;
+            line-height: 38px;
+            font-size: 14px;
+            float: left;
+        }
+
+        ul {
+            float: left;
+            height: 37px;
+            padding-left: 40px;
+
+            li {
+                float: left;
+
+                a {
+                    height: 37px;
+                    line-height: 37px;
+                    margin-right: 40px;
+                    font-size: 14px;
+                }
+
+                a:hover {
+                    color: #ff195a;
+                }
+            }
+        }
+
+        >a {
+            float: right;
+            font-size: 14px;
+            line-height: 37px;
+            margin-right: 40px;
+        }
+
+        >a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.contentBox{
+    background: white;
+
+    .content{
+        width: 1190px;
+        margin: 0 auto;
+
+        .detailBox{
+            min-height: 600px;
+            width: 990px;
+            .detail{
+                min-height: 600px;
+                width: 990px;
+                margin-top: 20px;
+                overflow: hidden;
+                .left{
+                    width: 460px;
+                    float: left;
+                    min-height: 600px;
+                    .productImg{
+                        width: 460px;
+                        margin-top: 20px;
+                        img{
+                            width: 418px;
+                            height: 418px;
+                            margin: 0 auto;
+                        }
+                    }
+                    .productImg_t{
+                        height: 60px;
+                        width: 460px;
+                        padding-top: 22px;
+                        text-align: center;
+                        img{
+                            width: 60px;
+                            height: 60px;
+                            display: inline-block;
+                            margin-left: 16px;
+                        }
+                    }
+                    .operation{
+                        padding: 38px 40px 25px;
+                        font-size: 12px;
+                        i, em{
+                            font-style: normal;
+                            color: #999;
+                            margin-right: 30px;
+                        }
+                    }
+                }
+                .right{
+                    width: 530px;
+                    float: right;
+                    min-height: 600px;
+                    overflow: hidden;
+                    .productInfo{
+                        margin-top: 20px;
+                        width: 530px;
+                        h4{
+                            font-size: 16px;
+                            font-weight: 700;
+                            padding: 0 10px;
+                        }
+                        p{
+                            color: #FF0036;
+                            font-size: 14px;
+                            padding: 0 10px;
+                            margin-bottom: 12px;
+                        }
+                        .price{
+                            height: 31px;
+                            padding: 5px 0;
+                            line-height: 31px;
+                            background: url(../images/product/price_bg.png);
+                            b{
+                                font-size: 12px;
+                                font-weight: normal;
+                                color: #999;
+                                margin-left: 8px;
+                            }
+                            strong{
+                                font-size: 24px;
+                                color: #FF0036;
+                                margin-left: 50px;
+                            }
+                        }
+                        .freight{
+                            height: 37px;
+                            width: 510px;
+                            line-height: 37px;
+                            padding: 5px 0;
+                            b{
+                                font-size: 12px;
+                                font-weight: normal;
+                                color: #999;
+                                margin-left: 8px;
+                            }
+                        }
+                        .evaluation{
+                            width: 510px;
+                            height: 16px;
+                            padding: 10px 0;
+                            text-align: center;
+                            border: 1px dotted #c9c9c9;
+                            border-right: none;
+                            border-right: none;
+                            line-height: 16px;
+                            font-size: 12px;
+                            color: #999;
+                            strong{
+                                color: #FF0036;
+                                margin-left: 3px;
+                            }
+                        }
+                        .division{
+                            padding-left: 10px;
+                            padding-top: 16px;
+                            dl{
+                                height: 45px;
+                                line-height: 45px;
+                                padding-bottom: 6px;
+                                dt{
+                                    width: 66px;
+                                    float: left;
+                                    font-size: 12px;
+                                    color: #999;
+                                }
+                                dd{
+                                    float: left;
+                                    ul{
+                                        height: 46px;
+                                        li{
+                                            height: 38px;
+                                            margin-top: 5px;
+                                            cursor: pointer;
+                                            float: left;
+                                            margin-right: 4px;
+                                            padding: 1px;
+                                            img{
+                                                display: inline-block;
+                                                width: 38px;
+                                                height: 38px;
+                                                border: 1px solid #b8b7bd;
+                                            }
+                                        }
+                                        li:hover{
+                                            padding: 0;
+                                            img{
+                                                border: 2px solid #FF0036;
+                                            }
+                                        }
+                                    }
+                                    ol{
+                                        li{
+                                            padding: 1px;
+                                            cursor: pointer;
+                                            b{
+                                                display: block;
+                                                height: 28px;
+                                                line-height: 28px;
+                                                margin-top: 9px;
+                                                padding: 0 9px;
+                                                font-size: 12px;
+                                                font-weight: normal;
+                                                border: 1px solid #b8b7bd;
+                                            }
+                                        }
+                                        li:hover{
+                                            padding: 0;
+                                            b{
+                                                border: 2px solid #FF0036;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            dl:nth-child(3){
+                                height: 36px;
+                                line-height: 36px;
+                                dd{
+                                    font-size: 12px;
+                                    color: #999;
+                                    input{
+                                        width: 36px;
+                                        height: 30px;
+                                        border: 1px solid #a7a6ac;
+                                        outline: none;
+                                        float: left;
+                                        text-align: center;
+                                        color: #666;
+                                        font-size: 12px;
+                                    }
+                                    .num{
+                                        width: 18px;
+                                        height: 32px;
+                                        float: left;
+                                        margin-left: 3px;
+                                        margin-right: 10px;
+                                        span{
+                                            display: block;
+                                            height: 12px;
+                                            width: 16px;
+                                            border: 1px solid #a7a6ab;
+                                            line-height: 12px;
+                                            text-align: center;
+                                            font-size: 12px;
+                                            margin-bottom: 4px;
+                                        }
+                                    }
+                                }
+                            }
+                            input:nth-of-type(1){
+                                width: 178px;
+                                height: 38px;
+                                border: 1px solid #FF0036;
+                                color: #FF0036;
+                                background: #ffeded;
+                                cursor: pointer;
+                                font-size: 16px;
+                            }
+                            input:nth-of-type(2){
+                                width: 178px;
+                                height: 38px;
+                                border: 1px solid #FF0036;
+                                color: #FF0036;
+                                background: #ff0036;
+                                cursor: pointer;
+                                color: white;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

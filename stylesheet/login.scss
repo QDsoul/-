@@ -106,6 +106,20 @@ header {
                 padding: 8px 0;
                 color: #3c3c3c;
                 font-size: 16px;
+                height: 37px;
+            }
+            .tip{
+                color: #6C6C6C;
+                position: absolute;
+                top: 45px;
+                height: 16px;
+                border: 1px solid #ffb4a8;
+                padding: 6px 20px;
+                background: #fef2f2;
+                font-size: 14px;
+                line-height: 16px;
+                width: 258px;
+                display: none;
             }
             img {
                 margin: 24px auto 0;
@@ -136,6 +150,7 @@ header {
                     }
                 }
             }
+
             form {
                 width: 300px;
                 // height: 294px;
@@ -174,6 +189,7 @@ header {
                     border: none;
                     margin-top: 20px;
                     font-size: 16px;
+                    cursor: pointer;
                 }
             }
             .othersWay {

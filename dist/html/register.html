@@ -129,7 +129,7 @@
                 </h4>
                 <p>校验码已发送到你的手机，15分钟内输入有效，请勿泄漏</p>
                 <div class="phone1">
-                    <b>手机号</b>
+                    <b disabled>手机号</b>
                     <strong></strong>
                 </div>
                 <div class="validate1">
@@ -139,6 +139,61 @@
                 </div>
                 <span><i>&#xe65b;</i>校验码已发送至你的手机，请查收</span>
                 <input type="submit" id="next2" value="确认">
+            </div>
+            <div class="userInfo">
+                <div class="userName">
+                    <b>登录名</b>
+                    <span></span>
+                </div>
+                <div class="userPwd">
+                    <h4>设置登录密码</h4><span>登录时验证，保护账号信息</span>
+                    <div id="setPwdBox">
+                        <label for="setPwd">登录密码</label><input id="setPwd" type="password" class="setPwd">
+                        <div class="pwdTip"></div>
+                        <br>
+                        <label for="reSetPwd">确认密码</label><input id="reSetPwd" type="password" class="reSetPwd">
+                        <div class="rePwdTip"></div>
+                    </div>
+                </div>
+                <div class="VIPName">
+                    <h4>设置会员名</h4>
+                    <div id="setVIPNameBox">
+                        <label for="setVIPName">登录名</label><input id="setVIPName" type="text">
+                        <div class="setVIPTip"></div>
+                    </div>
+                </div>
+                <input id="toPay" type="submit" value="提交">
+            </div>
+
+            <div class="wayOfPay">
+                <label for="personName">真实姓名</label><input id="personName" type="text" class="personName">
+                <div class="personNameTip"></div>
+                <br>
+                <label for="personId">身份证号</label><input id="personId" type="tetx" class="personId">
+                <div class="personIdTip"></div>
+                <br>
+                <label for="codeId">银行卡号<b>&#xe649;</b></label><input id="codeId" type="text" class="codeId">
+                <div class="codeIdTip"></div>
+                <br>
+                <label for="personPhone">手机号码</label><input id="personPhone" type="text" class="personPhone">
+                <p>请填写您在银行预留的手机号码，以防止验证银行卡是否属于您本人</p>
+                <div class="personPhoneTip"></div>
+                <br>
+                <label for="setPayPwd">设置支付宝支付密码</label><input id="setPayPwd" type="password" class="password">
+                <div class="setPayPwdTip"></div>
+                <br>
+                <label for="reSetPayPwd">确认支付密码</label><input id="reSetPayPwd" type="password" class="reSetPayPwd">
+                <div class="reSetPayPwdTip"></div>
+                <input id="toSuccess" type="submit" value="确定">
+                <a id="toSuccess1" href="">直接跳过，完成注册</a>
+            </div>
+            <div class="registerSuccess">
+                <p>
+                    <i>&#xe65b;</i>
+                    <em>您</em>
+                    <b>，恭喜注册成功</b>
+                </p>
+                <a href="login.html">去登陆</a>
             </div>
         </div>
     </div>

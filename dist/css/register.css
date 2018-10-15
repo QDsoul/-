@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body,
 ul,
@@ -883,20 +884,21 @@ header {
 .contentBox {
   background: white; }
   .contentBox .content {
-    padding: 50px 0;
+    padding: 50px 0 0;
     width: 1190px;
-    min-height: 200px;
+    min-height: 300px;
     margin: 0 auto;
     position: relative; }
     .contentBox .content form {
-      width: 720px;
+      width: 750px;
       margin: 0 auto;
       padding: 10px 0; }
       .contentBox .content form .phone,
       .contentBox .content form .validate {
         height: 37px;
         padding: 10px 0;
-        position: relative; }
+        position: relative;
+        user-select: none; }
         .contentBox .content form .phone label,
         .contentBox .content form .validate label {
           width: 240px;
@@ -955,7 +957,8 @@ header {
               max-height: 180px;
               overflow: auto;
               border: 1px solid #ccc;
-              display: none; }
+              display: none;
+              z-index: 100; }
               .contentBox .content form .phone .country .selectCountry .countryList li,
               .contentBox .content form .validate .country .selectCountry .countryList li {
                 width: 133px;
@@ -1154,6 +1157,165 @@ header {
         background: #ff4001;
         border-radius: 3px;
         cursor: pointer; }
+    .contentBox .content .userInfo {
+      width: 600px;
+      margin: 0 auto;
+      display: none; }
+      .contentBox .content .userInfo input {
+        border-radius: 3px;
+        border: 1px solid #ccc; }
+      .contentBox .content .userInfo label {
+        color: #3c3c3c; }
+      .contentBox .content .userInfo div b,
+      .contentBox .content .userInfo div h4 {
+        width: 240px;
+        height: 37px;
+        line-height: 37px;
+        display: block;
+        float: left;
+        text-align: right;
+        margin-right: 20px;
+        font-weight: 900;
+        font-family: '黑体';
+        color: #3c3c3c; }
+      .contentBox .content .userInfo div span {
+        height: 37px;
+        display: block;
+        float: left;
+        line-height: 37px;
+        font-weight: normal;
+        color: #3c3c3c; }
+      .contentBox .content .userInfo .userName,
+      .contentBox .content .userInfo .VIPName {
+        height: 37px;
+        padding: 10px 0;
+        margin-top: 10px;
+        font-size: 14px; }
+      .contentBox .content .userInfo .VIPName {
+        margin: 0; }
+      .contentBox .content .userInfo .userPwd span {
+        font-size: 12px; }
+      .contentBox .content .userInfo #setPwdBox,
+      .contentBox .content .userInfo #setVIPNameBox {
+        clear: both;
+        position: relative; }
+        .contentBox .content .userInfo #setPwdBox label,
+        .contentBox .content .userInfo #setVIPNameBox label {
+          width: 240px;
+          height: 36px;
+          line-height: 36px;
+          display: block;
+          float: left;
+          text-align: right;
+          margin-right: 20px;
+          clear: both; }
+        .contentBox .content .userInfo #setPwdBox input,
+        .contentBox .content .userInfo #setVIPNameBox input {
+          clear: both;
+          height: 24px;
+          margin: 6px 0; }
+      .contentBox .content .userInfo .pwdTip,
+      .contentBox .content .userInfo .rePwdTip,
+      .contentBox .content .userInfo .setVIPTip {
+        position: absolute;
+        top: 6px;
+        left: 436px;
+        font-size: 14px; }
+      .contentBox .content .userInfo .rePwdTip {
+        top: 45px; }
+      .contentBox .content .userInfo #toPay {
+        width: 100px;
+        height: 36px;
+        padding: 0 20px;
+        margin: 50px auto 0;
+        border: none;
+        font-size: 16px;
+        color: white;
+        display: block;
+        background: #ff4001;
+        border-radius: 3px;
+        cursor: pointer;
+        position: relative; }
+    .contentBox .content .wayOfPay {
+      width: 640px;
+      margin: 0 auto;
+      text-align: center;
+      display: none; }
+      .contentBox .content .wayOfPay label {
+        width: 240px;
+        text-align: right;
+        display: block;
+        float: left;
+        font-size: 14px;
+        color: #3c3c3c;
+        position: relative;
+        margin-right: 15px; }
+        .contentBox .content .wayOfPay label b {
+          position: absolute;
+          left: 260px;
+          top: 5px; }
+      .contentBox .content .wayOfPay input {
+        display: block;
+        width: 200px;
+        height: 24px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        padding: 0 8px; }
+      .contentBox .content .wayOfPay input:nth-of-type(3) {
+        width: 184px;
+        padding-left: 24px; }
+      .contentBox .content .wayOfPay p {
+        font-size: 12px;
+        color: #666;
+        padding-left: 235px;
+        margin-top: 3px; }
+      .contentBox .content .wayOfPay input[type="submit"] {
+        width: 100px;
+        height: 36px;
+        padding: 0 20px;
+        margin: 32px auto 0;
+        border: none;
+        font-size: 16px;
+        color: white;
+        display: inline-block;
+        background: #ff4001;
+        border-radius: 3px;
+        cursor: pointer;
+        position: relative; }
+      .contentBox .content .wayOfPay a {
+        font-size: 12px;
+        color: blue; }
+      .contentBox .content .wayOfPay a:hover {
+        text-decoration: underline; }
+    .contentBox .content .registerSuccess {
+      width: 360px;
+      margin: 0 auto;
+      display: none;
+      padding-top: 100px;
+      position: relative; }
+      .contentBox .content .registerSuccess p em {
+        font-style: normal;
+        font-weight: 600; }
+      .contentBox .content .registerSuccess p i {
+        font-style: normal;
+        color: #6bc827;
+        font-size: 18px; }
+      .contentBox .content .registerSuccess a {
+        position: absolute;
+        right: -25px;
+        bottom: -100px;
+        width: 100px;
+        height: 36px;
+        padding: 0 20px;
+        margin: 32px auto 0;
+        border: none;
+        font-size: 16px;
+        color: white;
+        display: inline-block;
+        background: #ff4001;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 36px; }
 
 .footerBox {
   height: 171px; }

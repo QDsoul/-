@@ -23,27 +23,187 @@ define(["drag", "jquery", "jquery-cookie"], function (drag, $) {
 
             // 验证
             drag.drag($("#validate .block"), $("#validate"), $(".progracess"), $("#validate p"), $("#next"));
-            $("#next").click(function(ev){
+            $("#next").click(function (ev) {
                 ev.preventDefault();
-                var phone = $("#phone").val();
-                if(!phone){
-                    $(".phone .tip").html("手机号不能为空").css({"color" : "red"});
-                }else if(!(/^1[34578]\d{9}$/.test(phone))){ 
-                    $(".phone .tip").html("手机号格式不正确").css({"color" : "red"});
+                var isOK = validatePhone();
+                var isHas = false;
+                $.ajax({
+                    type : "POST",
+                    url : "../php/users.php?type=isHasUser",
+                    data : `username=${$("#phone").val()}`,
+                    success : function(res){
+                        if(res == "n"){
+                            isHas = true;
+                        }else{
+                            $(".phone .tip").html("此手机号已被注册").css("color", "red");
+                        }
+                        if(isOK && isHas){
+                            $(".phoneMsg").css({
+                                "display": "block"
+                            });
+                            $(".phoneMsg .phone1 strong").html(phone);
+                            wait();
+                        }
+                    },
+                    error : function(msg){
+                        alert(msg);
+                    }
+                })
+            })
+            $("#phone").focus(function () {
+
+            }).blur(function () {
+                validatePhone();
+            })
+            $(".validate1 input[type='button']").click(function () {
+                wait();
+            })
+            // 关闭验证码页面
+            $(".close").click(function () {
+                $(".phoneMsg").css({
+                    "display": "none"
+                });
+            })
+            // 进入填写账户信息页面
+            $("#next2").click(function () {
+                $(".phoneMsg").css({
+                    "display": "none"
+                });
+                $(".firstForm").css({
+                    "display": "none"
+                });
+                $(".steps>ul li").eq(1).attr("class", "active");
+                $(".userInfo").css("display", "block");
+                $(".userInfo .userName span").html($("#phone").val());
+            })
+
+            // $("#next2").click(function(){
+                
+            // })
+            // 验证密码是否标准
+            var isInfo1 = false;
+            var isInfo2 = false;
+            $("#setPwd").focus(function(){
+                $(".pwdTip").html("");
+            }).blur(function(){
+                if($(this).val().length < 6 || $(this).val().length > 18){
+                    $(".pwdTip").html("密码为6~18个字符").css("color", "red");
+                    isInfo1 = false;
                 }else{
-                    $(".phone .tip").html("手机号可以使用").css({"color" : "green"});
-                    $(".phoneMsg").css({"display": "block"});
-                    $(".phoneMsg .phone1 strong").html(phone);
+                    $(".pwdTip").html("密码可以使用").css("color", "green");
+                    isInfo1 = true;
                 }
             })
-            $(".close").click(function(){
-                $(".phoneMsg").css({"display": "none"});
+            // 验证再次填写密码是否标准
+            $("#reSetPwd").focus(function(){
+                $(".rePwdTip").html("");
+            }).blur(function(){
+                if(!$("#reSetPwd").val()){
+                    $(".rePwdTip").html("密码不能为空").css("color", "red");
+                    isInfo2 = false;
+                }else if($(this).val().length < 6 || $(this).val().length > 18){
+                    $(".rePwdTip").html("密码为6~18个字符").css("color", "red");
+                    isInfo2 = false;
+                }else if($("#setPwd").val() != $("#reSetPwd").val()){
+                    $(".rePwdTip").html("两次密码不一致").css("color", "red");
+                    isInfo2 = false;
+                }else{
+                    $(".rePwdTip").html("密码一致").css("color", "green");
+                    isInfo2 = true;
+                }
             })
-            $("#next2").click(function(){
-                $(".phoneMsg").css({"display": "none"});
-                $(".firstForm").css({"display": "none"});
-                $(".steps>ul li").eq(1).attr("class", "active");
+            // 验证会员名是否标准
+            $("#setVIPName").focus(function(){
+                $(".setVIPTip").html("");
+            }).blur(function(){
+                if(!$("#setVIPName").val()){
+                    // $(".setVIPTip").html("请输入正确的会员名").css("color", "red");
+                }else{
+                    $(".setVIPTip").html("会员名可以使用").css("color", "green");
+                }
             })
+            // 跳转设置支付方式页面
+            $("#toPay").click(function(){
+                if(isInfo1 == true && isInfo2 == true){
+                    $(".userInfo").css("display", "none");
+                    $(".wayOfPay").css("display", "block");
+                    $(".steps>ul li").eq(2).attr("class", "active");
+                }
+            })
+            // 跳转成功页面
+            $("#toSuccess").click(function(e){
+                e.preventDefault();
+                isSuccessOfReg();
+            })
+            $("#toSuccess1").click(function(e){
+                e.preventDefault();
+                isSuccessOfReg();
+            })
+
+
+            function isSuccessOfReg(){
+                $.ajax({
+                    type : "POST",
+                    data : `username=${$("#phone").val()}&password=${$("#setPwd").val()}&vipName=${$("#setVIPName").val()}`,
+                    url : "../php/users.php?type=register",
+                    success : function(res){
+                        if(res == "y"){
+                            $(".wayOfPay").css("display", "none");
+                            $(".registerSuccess").css("display", "block");
+                            $(".steps>ul li").eq(3).attr("class", "active");
+                            $(".registerSuccess em").html($("#phone").val());
+                        }else{
+                            $(".wayOfPay").css("display", "none");
+                            $(".registerSuccess").css("display", "block");
+                            $(".steps>ul li").eq(3).attr("class", "active");
+                            $(".registerSuccess em").html($("#phone").val());
+                            $(".steps ul li:nth-child(4)").html("<b>✘</b>注册失败");
+                            $(".registerSuccess p").html("注册失败");
+                            $(".registerSuccess a").html("重新注册");
+                            $(".registerSuccess a").click(function(e){
+                                e.preventDefault();
+                                location.reload();
+                            })
+                        }
+                    },
+                    error : function(msg){
+                        alert(msg);
+                    }
+                })
+            }
+
+            function validatePhone() {
+                var phone = $("#phone").val();
+                var isOK = false;
+                if (!phone) {
+                    $(".phone .tip").html("请输入你的手机号码").css({
+                        "color": "red"
+                    });
+                } else if (!(/^1[34578]\d{9}$/.test(phone))) {
+                    $(".phone .tip").html("手机号格式不正确").css({
+                        "color": "red"
+                    });
+                } else {
+                    $(".phone .tip").html("手机号可以使用").css({
+                        "color": "green"
+                    });
+                    isOK = true;
+                }
+                return isOK;
+            }
+
+            function wait() {
+                var timeInit = 10;
+                $(".validate1 input[type='button']").val(`重发验证码${timeInit}s`).css("color", "white").attr("disabled", "true");
+                var timer = setInterval(function () {
+                    timeInit--;
+                    $(".validate1 input[type='button']").val(`重发验证码${timeInit}s`);
+                    if (timeInit == 0) {
+                        clearInterval(timer);
+                        $(".validate1 input[type='button']").val(`免费获取验证码`).css("color", "black").removeAttr("disabled");
+                    }
+                }, 1000)
+            }
             // var offsetX = 0;
             // $("#validate .block").mousedown(function (e) {
             //     offsetX = e.clientX - $("#validate .block").position().left;
