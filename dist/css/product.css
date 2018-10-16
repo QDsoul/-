@@ -650,6 +650,7 @@ footer {
   background: white; }
   .contentBox .content {
     width: 1190px;
+    height: auto;
     margin: 0 auto; }
     .contentBox .content .detailBox {
       min-height: 600px;
@@ -664,12 +665,34 @@ footer {
           float: left;
           min-height: 600px; }
           .contentBox .content .detailBox .detail .left .productImg {
-            width: 460px;
-            margin-top: 20px; }
+            width: 418px;
+            position: relative;
+            margin: 0 auto; }
             .contentBox .content .detailBox .detail .left .productImg img {
               width: 418px;
               height: 418px;
               margin: 0 auto; }
+            .contentBox .content .detailBox .detail .left .productImg .magnifier {
+              width: 175px;
+              height: 175px;
+              background: url(../images/product/magnifier.png);
+              position: absolute;
+              left: 0;
+              top: 0;
+              cursor: move; }
+            .contentBox .content .detailBox .detail .left .productImg .magnifierImg {
+              width: 418px;
+              height: 418px;
+              position: absolute;
+              left: 432px;
+              top: 0;
+              z-index: 100;
+              overflow: hidden;
+              display: none; }
+              .contentBox .content .detailBox .detail .left .productImg .magnifierImg img {
+                width: 1000px;
+                height: 1000px;
+                position: absolute; }
           .contentBox .content .detailBox .detail .left .productImg_t {
             height: 60px;
             width: 460px;
@@ -679,11 +702,17 @@ footer {
               width: 60px;
               height: 60px;
               display: inline-block;
-              margin-left: 16px; }
+              margin-left: 16px;
+              cursor: pointer;
+              padding: 1px; }
+            .contentBox .content .detailBox .detail .left .productImg_t img.active {
+              border: 1px solid black;
+              padding: 0; }
           .contentBox .content .detailBox .detail .left .operation {
             padding: 38px 40px 25px;
             font-size: 12px; }
-            .contentBox .content .detailBox .detail .left .operation i, .contentBox .content .detailBox .detail .left .operation em {
+            .contentBox .content .detailBox .detail .left .operation i,
+            .contentBox .content .detailBox .detail .left .operation em {
               font-style: normal;
               color: #999;
               margin-right: 30px; }
@@ -744,18 +773,24 @@ footer {
                 margin-left: 3px; }
             .contentBox .content .detailBox .detail .right .productInfo .division {
               padding-left: 10px;
-              padding-top: 16px; }
+              padding-top: 16px;
+              text-align: center; }
               .contentBox .content .detailBox .detail .right .productInfo .division dl {
                 height: 45px;
                 line-height: 45px;
-                padding-bottom: 6px; }
+                padding-bottom: 6px;
+                padding-top: 5px; }
                 .contentBox .content .detailBox .detail .right .productInfo .division dl dt {
-                  width: 66px;
+                  min-width: 75px;
                   float: left;
                   font-size: 12px;
-                  color: #999; }
+                  color: #999;
+                  text-align: left;
+                  padding: 5px 0; }
                 .contentBox .content .detailBox .detail .right .productInfo .division dl dd {
-                  float: left; }
+                  float: left;
+                  width: 420px;
+                  padding: 5px 0; }
                   .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul {
                     height: 46px; }
                     .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul li {
@@ -764,19 +799,32 @@ footer {
                       cursor: pointer;
                       float: left;
                       margin-right: 4px;
-                      padding: 1px; }
+                      padding: 1px;
+                      position: relative; }
                       .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul li img {
                         display: inline-block;
                         width: 38px;
                         height: 38px;
                         border: 1px solid #b8b7bd; }
+                      .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul li span i {
+                        display: block;
+                        width: 12px;
+                        height: 12px;
+                        position: absolute;
+                        background: url(../images/product/active.png);
+                        bottom: -4px;
+                        right: 0; }
+                    .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul li.active,
                     .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul li:hover {
                       padding: 0; }
+                      .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul li.active img,
                       .contentBox .content .detailBox .detail .right .productInfo .division dl dd ul li:hover img {
                         border: 2px solid #FF0036; }
                   .contentBox .content .detailBox .detail .right .productInfo .division dl dd ol li {
                     padding: 1px;
-                    cursor: pointer; }
+                    cursor: pointer;
+                    position: relative;
+                    float: left; }
                     .contentBox .content .detailBox .detail .right .productInfo .division dl dd ol li b {
                       display: block;
                       height: 28px;
@@ -786,32 +834,46 @@ footer {
                       font-size: 12px;
                       font-weight: normal;
                       border: 1px solid #b8b7bd; }
+                    .contentBox .content .detailBox .detail .right .productInfo .division dl dd ol li span i {
+                      display: block;
+                      width: 12px;
+                      height: 12px;
+                      position: absolute;
+                      background: url(../images/product/active.png);
+                      right: 0;
+                      bottom: 0; }
+                  .contentBox .content .detailBox .detail .right .productInfo .division dl dd ol li.active,
                   .contentBox .content .detailBox .detail .right .productInfo .division dl dd ol li:hover {
                     padding: 0; }
+                    .contentBox .content .detailBox .detail .right .productInfo .division dl dd ol li.active b,
                     .contentBox .content .detailBox .detail .right .productInfo .division dl dd ol li:hover b {
                       border: 2px solid #FF0036; }
-              .contentBox .content .detailBox .detail .right .productInfo .division dl:nth-child(3) {
+              .contentBox .content .detailBox .detail .right .productInfo .division .qtyBox {
                 height: 36px;
-                line-height: 36px; }
-                .contentBox .content .detailBox .detail .right .productInfo .division dl:nth-child(3) dd {
+                line-height: 36px;
+                margin-bottom: 15px; }
+                .contentBox .content .detailBox .detail .right .productInfo .division .qtyBox dd {
                   font-size: 12px;
-                  color: #999; }
-                  .contentBox .content .detailBox .detail .right .productInfo .division dl:nth-child(3) dd input {
-                    width: 36px;
+                  color: #999;
+                  text-align: left; }
+                  .contentBox .content .detailBox .detail .right .productInfo .division .qtyBox dd input {
+                    width: 45px;
                     height: 30px;
                     border: 1px solid #a7a6ac;
                     outline: none;
                     float: left;
                     text-align: center;
                     color: #666;
-                    font-size: 12px; }
-                  .contentBox .content .detailBox .detail .right .productInfo .division dl:nth-child(3) dd .num {
+                    font-size: 12px;
+                    background: white; }
+                  .contentBox .content .detailBox .detail .right .productInfo .division .qtyBox dd .num {
                     width: 18px;
                     height: 32px;
                     float: left;
                     margin-left: 3px;
-                    margin-right: 10px; }
-                    .contentBox .content .detailBox .detail .right .productInfo .division dl:nth-child(3) dd .num span {
+                    margin-right: 10px;
+                    user-select: none; }
+                    .contentBox .content .detailBox .detail .right .productInfo .division .qtyBox dd .num span {
                       display: block;
                       height: 12px;
                       width: 16px;
@@ -819,7 +881,8 @@ footer {
                       line-height: 12px;
                       text-align: center;
                       font-size: 12px;
-                      margin-bottom: 4px; }
+                      margin-bottom: 4px;
+                      cursor: pointer; }
               .contentBox .content .detailBox .detail .right .productInfo .division input:nth-of-type(1) {
                 width: 178px;
                 height: 38px;
@@ -837,3 +900,137 @@ footer {
                 cursor: pointer;
                 color: white;
                 font-size: 16px; }
+              .contentBox .content .detailBox .detail .right .productInfo .division .server {
+                width: 470px;
+                padding: 0 20px;
+                margin-top: 50px;
+                font-size: 12px;
+                text-align: left; }
+                .contentBox .content .detailBox .detail .right .productInfo .division .server a:nth-child(1) {
+                  color: #999; }
+                .contentBox .content .detailBox .detail .right .productInfo .division .server a {
+                  margin-right: 30px;
+                  color: #666; }
+                .contentBox .content .detailBox .detail .right .productInfo .division .server span {
+                  float: right;
+                  color: #666; }
+                  .contentBox .content .detailBox .detail .right .productInfo .division .server span em {
+                    font-style: normal;
+                    font-weight: 600;
+                    margin-left: 3px; }
+      .contentBox .content .detailBox .tm_layout {
+        width: 990px; }
+      .contentBox .content .detailBox .proInfo {
+        width: 990px;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px; }
+        .contentBox .content .detailBox .proInfo .left {
+          width: 188px;
+          min-height: 183px;
+          float: left;
+          border: 1px solid #e5e5e5;
+          padding: 0 0 15px; }
+          .contentBox .content .detailBox .proInfo .left h4 {
+            padding-left: 15px;
+            border-bottom: 1px solid #e5e5e5;
+            height: 48px;
+            line-height: 48px; }
+            .contentBox .content .detailBox .proInfo .left h4 a {
+              font-size: 14px;
+              color: #404040;
+              font-weight: 600; }
+            .contentBox .content .detailBox .proInfo .left h4 a:hover {
+              text-decoration: underline; }
+          .contentBox .content .detailBox .proInfo .left p {
+            width: 100px;
+            font-size: 12px;
+            font-weight: 600;
+            text-align: center;
+            color: #999;
+            margin: 10px auto 5px; }
+          .contentBox .content .detailBox .proInfo .left .score {
+            width: 130px;
+            height: 30px;
+            margin: 30px auto 0; }
+            .contentBox .content .detailBox .proInfo .left .score dl {
+              width: 30px;
+              float: left;
+              margin-right: 20px;
+              font-size: 12px;
+              text-align: center;
+              color: #999; }
+              .contentBox .content .detailBox .proInfo .left .score dl dd {
+                color: #ff0036; }
+            .contentBox .content .detailBox .proInfo .left .score dl:nth-last-of-type(1) {
+              margin: 0; }
+          .contentBox .content .detailBox .proInfo .left .goShop {
+            width: 150px;
+            margin: 16px auto 0; }
+            .contentBox .content .detailBox .proInfo .left .goShop input {
+              float: left;
+              display: block;
+              width: 70px;
+              height: 24px;
+              margin: 0 auto;
+              border: none;
+              text-align: center; }
+            .contentBox .content .detailBox .proInfo .left .goShop input:nth-child(1) {
+              background: #333;
+              color: white;
+              margin-right: 6px;
+              border: 1px solid #333; }
+            .contentBox .content .detailBox .proInfo .left .goShop input:nth-child(2) {
+              background: #f5f5f5;
+              color: #333;
+              border: 1px solid #ccc; }
+        .contentBox .content .detailBox .proInfo .right {
+          width: 790px;
+          min-height: 200px;
+          margin-left: 10px;
+          float: left; }
+          .contentBox .content .detailBox .proInfo .right .top {
+            width: 788px;
+            height: 48px;
+            border: 1px solid #dfdfdf;
+            line-height: 48px; }
+            .contentBox .content .detailBox .proInfo .right .top ul li {
+              float: left;
+              padding: 0 20px;
+              margin-top: 16px;
+              height: 16px;
+              line-height: 16px;
+              font-size: 12px;
+              border-right: 1px dotted #d2d2d2; }
+            .contentBox .content .detailBox .proInfo .right .top ul li:nth-child(1) {
+              height: 48px;
+              line-height: 48px;
+              border-left: 1px solid #cfbfb1;
+              border-right: 1px solid #cfbfb1;
+              color: #FF0036;
+              font-size: 12px;
+              position: relative;
+              margin-left: -1px;
+              margin: 0; }
+          .contentBox .content .detailBox .proInfo .right .bottom {
+            width: 788px;
+            padding: 18px 20px;
+            color: #666; }
+            .contentBox .content .detailBox .proInfo .right .bottom h3 {
+              font-size: 12px;
+              font-weight: normal;
+              height: 40px; }
+            .contentBox .content .detailBox .proInfo .right .bottom p {
+              font-size: 12px;
+              height: 20px;
+              color: #999;
+              font-weight: 600; }
+            .contentBox .content .detailBox .proInfo .right .bottom ol li {
+              width: 220px;
+              height: 18px;
+              margin: 10px 15px 0 0;
+              display: inline-block;
+              font-size: 12px;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap; }

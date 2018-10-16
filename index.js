@@ -169,7 +169,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                     // 全球必买
                     $(`<img style='height:${res.choice.title.height};width:${res.choice.title.width}' src="../images/indexImg/${res.choice.title.url}" alt="">`).appendTo($("#topProduct .model1 .title"));
                     for (var i = 0; i < res.choice.product.length; i++) {
-                        productsHtml += `<a href="">
+                        productsHtml += `<a href="product.html?${res.choice.product[i].name}">
                                             <dl title='${res.choice.product[i].desc}'>
                                                 <dt>
                                                     <img style='height:${res.choice.product[i].height};width:${res.choice.product[i].width}' src="../images/indexImg/${res.choice.product[i].url}" alt="">
@@ -214,7 +214,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                             dlHtml += `
                                 <dl title="${res[i].products[k].name}">
                                         <dt>
-                                            <img style='height:${res[i].products[k].height};width:${res[i].products[k].width}' src="../images/indexImg/${res[i].products[k].url}" alt="">
+                                            <a href="product.html?${res[i].products[k].hash}"><img style='height:${res[i].products[k].height};width:${res[i].products[k].width}' src="../images/indexImg/${res[i].products[k].url}" alt=""></a>
                                         </dt>
                                         <dd>
                                             <p>${res[i].products[k].name}</p>
