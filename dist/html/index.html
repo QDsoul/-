@@ -21,7 +21,7 @@
                     <a href="">天猫首页</a>
                 </p>
                 <em>喵，欢迎来天猫国际</em>
-                <strong class="toLogin"><a href="">请登录</a></strong>
+                <strong class="toLogin"><a href="login.html">请登录</a></strong>
 
                 <ul>
                     <li><a href="">我的淘宝</a><span></span>
@@ -30,7 +30,7 @@
                             <a href="">已卖出的宝贝</a>
                         </p>
                     </li>
-                    <li><i>&#xe505;</i><a href="">购物车<em>0</em>件</a></li>
+                    <li class="toShoppingCar"><i>&#xe505;</i><a href="">购物车<em>0</em>件</a></li>
                     <li><a href="">收藏夹<span></span></a>
                         <p>
                             <a href="">收藏的宝贝</a>
@@ -211,6 +211,7 @@
     <div id="rightMenuBox">
         <div class="rightMenu">
             <div class="tapLogo">
+
                 <div class="tip">会员权益
                     <div class="bugle">◆</div>
                 </div>
@@ -219,6 +220,52 @@
                 <div>
                     <span></span>
                     <p>购物车</p>
+                </div>
+                <div class="shopCarLogin">
+                    <div class="login" id="loginOfCode">
+                        <div class="wayOfLogin">
+                            <p><i>&#xe611;</i>密码登录在这里</p>
+                            <b class="toLoginOfNum">&#xe62d;</b>
+                            <div class="bugle"></div>
+                        </div>
+                        <h4>手机扫码,安全登陆</h4>
+                        <img src="../images/login/login_code.png" alt="">
+                        <span>
+                            <strong>&#xe612;</strong>
+                            <p>
+                                打开<a href="">手机淘宝</a><em>|</em></em><a href="">手机天猫</a>
+                                <br>
+                                扫一扫登陆
+                            </p>
+                        </span>
+                        <div class="login_links">
+                            <a href="" class="toLoginOfNum2">密码登陆</a><a href="register.html">免费注册</a>
+                        </div>
+                    </div>
+                    <div class="login" id="loginOfNum">
+                        <div class="wayOfLogin">
+                            <p><i>&#xe610;</i>扫码登录更安全</p>
+                            <b class="toLoginOfCode">&#xe610;</b>
+                            <div class="bugle"></div>
+                        </div>
+                        <h4 class="numLogin">密码登录</h4>
+                        <p class="tip">123</p>
+                        <form action="">
+                            <div class="text">
+                                <label for="username">&#xe507;</label><input id="username" type="text" placeholder="会员名/邮箱/手机号">
+                            </div>
+                            <div class="text">
+                                <label for="password">&#xe649;</label><input id="password" type="password">
+                            </div>
+                            <input type="submit" id="login" value="登 录">
+                        </form>
+                        <div class="othersWay">
+                            <a href=""><i>&#xe60b;</i>微博登陆</a><a href=""><em>&#xe63b;</em>支付宝登陆</a>
+                        </div>
+                        <div class="login_links">
+                            <a href="">忘记密码</a><a href="">忘记会员名</a><a href="register.html">免费注册</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="rightMoney">
@@ -243,6 +290,91 @@
                 <img src="../images/indexImg/rightCode_title.png" alt="">
                 <div class="bugle">◆</div>
             </div>
+        </div>
+    </div>
+    <div class="shoppingCar" id="shoppingCar">
+        <p>
+            <input type="checkbox" id="selectAll">
+            <label for="selectAll">全选</label>
+            <a href="">全屏查看</a>
+        </p>
+        <dl>
+            <dt>
+                <input type="checkbox">
+                <strong>马克华菲</strong>
+                <b>￥<i>0.00</i></b>
+            </dt>
+            <dd>
+                <div class="proList">
+                    <div class="deletePro">x</div>
+                    <input type="checkbox">
+                    <img src="../images/product/booth1.jpg" alt="">
+                    <span>
+                        <p>颜色分类</p>
+                        <p>尺码</p>
+                    </span>
+                    <div class="qty">
+                        <div class="reduceQty">-</div>
+                        <em>2</em>
+                        <div class="addQty">+</div>
+                    </div>
+                    <div class="totalOfPro">
+                        ￥<b>329.00</b>
+                    </div>
+                </div>
+                <div class="proList">
+                    <div class="deletePro">x</div>
+                    <input type="checkbox">
+                    <img src="../images/product/booth1.jpg" alt="">
+                    <span>
+                        <p>颜色分类</p>
+                        <p>尺码</p>
+                    </span>
+                    <div class="qty">
+                        <div class="reduceQty">-</div>
+                        <em>2</em>
+                        <div class="addQty">+</div>
+                    </div>
+                    <div class="totalOfPro">
+                            ￥<b>329.00</b>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <input type="checkbox">
+                <strong>马克华菲</strong>
+                <b>￥<i>0.00</i></b>
+            </dt>
+
+            <dd>
+                <div class="proList">
+                    <div class="deletePro">x</div>
+                    <input type="checkbox">
+                    <img src="../images/product/booth1.jpg" alt="">
+                    <span>
+                        <p>颜色分类</p>
+                        <p>尺码</p>
+                    </span>
+                    <div class="qty">
+                        <div class="reduceQty">-</div>
+                        <em>1</em>
+                        <div class="addQty">+</div>
+                    </div>
+                    <div class="totalOfPro">
+                            ￥<b>329.00</b>
+                    </div>
+                </div>
+            </dd>
+
+        </dl>
+        <div class="bottomTotal">
+            <span>
+                <i>已选<em>0</em>件</i>
+                <b>￥<strong>0.00</strong></b>
+            </span>
+            <input class="total" type="submit" value="结算">
         </div>
     </div>
     <div id="goTop">

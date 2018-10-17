@@ -4,54 +4,67 @@ define(["jquery", "jquery-cookie"], function ($) {
 
             // 获取商品名称
 
-
+            var proUrlIndex = location.href.indexOf("?");
+            var proUrl = location.href.substring(proUrlIndex + 1);
+            var bottomImg = '';
             // 获取商品数据
             $.ajax({
                 type: "GET",
                 url: "../json/product.json",
                 success: function (res) {
-                    var proUrlIndex = location.href.indexOf("?");
-                    var proUrl = location.href.substring(proUrlIndex + 1);
-                    var bottomImg = '';
-                    for(var i = 0; i < res[proUrl].show.length; i++){
+
+                    for (var i = 0; i < res[proUrl].show.length; i++) {
                         bottomImg += `<img src="../images/product/${res[proUrl].show[i][0]}" alt="">`;
                     }
 
                     var metatit = '';
-                    if(res[proUrl].metatit.length != 0){
+                    if (res[proUrl].metatit.length != 0) {
                         var metatitName = res[proUrl].metatit[0];
-                        for(var j = 1; j < res[proUrl].metatit.length; j++){
-                            if(j == 1){
+                        for (var j = 1; j < res[proUrl].metatit.length; j++) {
+                            if (j == 1) {
                                 metatit += `
                                             <li class="active">
                                                 <img title='${res[proUrl].metatit[j][3]}' src="../images/product/${res[proUrl].metatit[j][0]}" alt="">
                                                 <span><i></i></span>
                                             </li>`;
-                            }else{
+                            } else {
                                 metatit += `
                                             <li>
                                             <img title='${res[proUrl].metatit[j][3]}' src="../images/product/${res[proUrl].metatit[j][0]}" alt="">
                                                 <span></span>
                                             </li>`;
                             }
-    
+
                         }
                     }
-                    
+
 
                     var soleType = '';
-                    for(var k = 1; k < res[proUrl].soleType.length; k++){
-                        if(k == 1){
+                    for (var k = 1; k < res[proUrl].soleType.length; k++) {
+                        if (k == 1) {
                             soleType += `
                             <li class="active">
                                 <b>${res[proUrl].soleType[k]}</b>
                                 <span><i></i></span>
                             </li>`;
-                        }else{
+                        } else {
                             soleType += `
                             <li>
                                 <b>${res[proUrl].soleType[k]}</b>
-                                <span><i></i></span>
+                                <span></span>
+                            </li>`;
+                        }
+                    }
+
+                    var skuRight = '';
+                    for (var l in res) {
+                        if (l != proUrl) {
+                            skuRight += `
+                            <li>
+                                <a href="product.html?${l}" title="${res[l].title}">
+                                    <img src="../images/product/${res[l].show[0][1]}" alt="">
+                                    <p>￥${res[l].price}</p>
+                                </a>
                             </li>`;
                         }
                     }
@@ -97,7 +110,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                                             </ul>
                                         </dd>
                                     </dl>
-                                    <dl>
+                                    <dl class="soleType">
                                         <dt>${res[proUrl].soleType[0]}</dt>
                                         <dd>
                                             <ol>
@@ -116,8 +129,8 @@ define(["jquery", "jquery-cookie"], function ($) {
                                             件
                                         </dd>
                                     </dl>
-                                    <input type="button" value="立即购买">
-                                    <input type="button" value="加入购物车">
+                                    <input id="toBug" type="button" value="立即购买">
+                                    <input id="toAddShopCar" type="button" value="加入购物车">
                                     <div class="server">
                                         <a href="">服务承诺</a>
                                         <a href="">正品保障</a>
@@ -129,15 +142,32 @@ define(["jquery", "jquery-cookie"], function ($) {
                             </div>
                         </div>
                     </div>
+                    <div class="skuRight">
+                        <span>
+                            <h4>看了又看</h4>
+                        </span>
+                        <ul>
+                            ${skuRight}
+                        </ul>
+                    </div>
                     `
                     $(html).appendTo($(".detailBox"));
-                    if(!metatitName){
+                    if (!metatitName) {
                         $(".proDivision").remove();
                     }
 
+                    //加入购物车
+                    $("#toAddShopCar").click(function () {
+                        if ($.cookie("username1")) {
+
+                        } else {
+                            $(".shopCarLogin").css("display", "block");
+                        }
+                    });
+
 
                     var proInfo = '';
-                    for(i = 1; i < res[proUrl].info.length; i++){
+                    for (i = 1; i < res[proUrl].info.length; i++) {
                         proInfo += `<li>${res[proUrl].info[i]}</li>`;
                     }
 
@@ -187,9 +217,9 @@ define(["jquery", "jquery-cookie"], function ($) {
                     </div>`;
 
                     $(htmlBottom).appendTo($(".detailBox"));
-                    if($(".proInfo .right").height() > $(".proInfo .left").height()){
+                    if ($(".proInfo .right").height() > $(".proInfo .left").height()) {
                         $(".proInfo").css("height", $(".proInfo .right").height());
-                    }else{
+                    } else {
                         $(".proInfo").css("height", $(".proInfo .left").height());
                     }
 
@@ -232,7 +262,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                     $(".productImg_t img").mouseover(function () {
                         $(".productImg_t img").attr("class", "");
                         $(this).attr("class", "active");
-                    }).on("click, mouseover", function(){
+                    }).on("click, mouseover", function () {
                         var newSrc = $(this).attr("src").replace("_t.jpg", ".jpg");
                         var newSrc_m = $(this).attr("src").replace("_t.jpg", "_m.jpg");
                         $(".productImg img").attr("src", newSrc);
@@ -249,6 +279,12 @@ define(["jquery", "jquery-cookie"], function ($) {
                         $(".productImg img").attr("src", newSrc);
                         $(".productImg .magnifierImg img").attr("src", newSrc_m);
                     });
+                    $(".soleType dd ol li").click(function () {
+                        $(".soleType dd ol li span").html("");
+                        $(this).find("span").html("<i></i>");
+                        $(".soleType dd ol li").attr("class", "");
+                        $(this).attr("class", "active");
+                    })
                     // 增加数量
                     $(".addQty").click(function () {
                         var qty = parseInt($(".qty").val()) + 1;

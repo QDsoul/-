@@ -20,5 +20,4 @@ require(["index", "login", "register", "product"], function(index, login, regist
     index.index();
     login.login();
     register.register();
-    product.product();
 })

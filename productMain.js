@@ -18,6 +18,6 @@ require.config({
 
 require(["index", "login", "register", "product"], function(index, login, register, product){
     index.index();
+    product.product();
     login.login();
-    register.register();
 })

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-html,
 body,
 ul,
 ol,
@@ -447,7 +446,7 @@ footer {
   width: 35px;
   background: #000;
   position: fixed;
-  right: 0;
+  right: 0px;
   top: 0; }
   #rightMenuBox .tip {
     display: none;
@@ -479,28 +478,39 @@ footer {
       width: 35px;
       height: 35px;
       background: url(../images/indexImg/tapLogo.png);
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative; }
+      #rightMenuBox .rightMenu .tapLogo img {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        border-radius: 13px;
+        left: 50%;
+        top: 50%;
+        margin: -13px 0 0 -13px; }
     #rightMenuBox .rightMenu .tapLogo:hover {
       background: #ff0036 url(../images/indexImg/tapLogo.png); }
     #rightMenuBox .rightMenu .rightShopCar {
       height: 100px;
       width: 35px;
-      margin: 8px 0; }
-      #rightMenuBox .rightMenu .rightShopCar div {
+      margin: 8px 0;
+      position: relative;
+      user-select: none; }
+      #rightMenuBox .rightMenu .rightShopCar > div {
         height: 98px;
         width: 25px;
         margin: auto;
         border-top: 1px solid #444;
         border-bottom: 1px solid #444;
         cursor: pointer; }
-        #rightMenuBox .rightMenu .rightShopCar div span {
+        #rightMenuBox .rightMenu .rightShopCar > div > span {
           display: block;
           width: 35px;
           height: 35px;
           position: relative;
           left: -5px;
           background: url(../images/indexImg/rightShopCar.png); }
-        #rightMenuBox .rightMenu .rightShopCar div p {
+        #rightMenuBox .rightMenu .rightShopCar > div p {
           width: 20px;
           height: 50px;
           text-align: center;
@@ -508,11 +518,170 @@ footer {
           margin: 0 auto;
           font-weight: 600;
           font-size: 12px; }
+      #rightMenuBox .rightMenu .rightShopCar .shopCarLogin {
+        width: 350px;
+        height: 400px;
+        background: white;
+        position: absolute;
+        right: 35px;
+        top: 0;
+        border: 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        z-index: 200;
+        padding-top: 30px;
+        display: none; }
+        #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login {
+          width: 300px;
+          height: 350px;
+          padding: 25px;
+          background: white; }
+          #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .wayOfLogin {
+            position: absolute;
+            right: 4px;
+            top: 36px; }
+            #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .wayOfLogin p {
+              float: left;
+              font-size: 12px;
+              width: 106px;
+              height: 16px;
+              padding: 5px 20px 5px 15px;
+              border: 1px solid #f3d995;
+              background: #fefcee;
+              color: #df9c1f;
+              position: relative;
+              margin-right: 10px; }
+              #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .wayOfLogin p i {
+                font-style: normal;
+                margin-right: 8px; }
+              #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .wayOfLogin p .bugle {
+                width: 6px;
+                height: 12px;
+                border-left-color: #fefcee;
+                border-width: 6px 0 6px 6px;
+                background: red;
+                position: absolute;
+                right: -6px; }
+            #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .wayOfLogin b {
+              font-size: 50px;
+              color: #f40;
+              float: right;
+              cursor: pointer;
+              font-weight: normal; }
+            #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .wayOfLogin b:hover {
+              color: #f52b00; }
+          #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login h4 {
+            padding: 8px 0;
+            color: #3c3c3c;
+            font-size: 16px;
+            height: 37px; }
+          #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .tip {
+            color: #6C6C6C;
+            position: absolute;
+            top: 45px;
+            height: 16px;
+            border: 1px solid #ffb4a8;
+            padding: 6px 20px;
+            background: #fef2f2;
+            font-size: 14px;
+            line-height: 16px;
+            width: 258px;
+            display: none; }
+          #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login img {
+            margin: 24px auto 0; }
+          #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login span {
+            display: block;
+            width: 188px;
+            height: 36px;
+            margin: 24px auto 0; }
+            #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login span strong {
+              display: block;
+              float: left;
+              font-size: 34px;
+              color: #f40;
+              font-weight: normal;
+              margin-right: 10px; }
+            #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login span p {
+              float: left;
+              font-size: 12px;
+              color: #9c9c9c;
+              width: auto; }
+              #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login span p em {
+                font-style: normal;
+                margin: 0 3px; }
+              #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login span p a {
+                color: #f40; }
+          #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login form {
+            width: 300px; }
+            #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login form .text {
+              width: 300px;
+              height: 40px;
+              position: relative;
+              margin-top: 20px; }
+              #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login form .text label {
+                display: block;
+                width: 40px;
+                height: 40px;
+                background: #ddd;
+                position: absolute;
+                top: 1px;
+                left: 1px;
+                font-size: 22px;
+                color: white;
+                line-height: 40px;
+                text-align: center; }
+              #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login form .text input {
+                width: 240px;
+                height: 18px;
+                padding: 11px 8px 11px 50px;
+                border: none;
+                border: 1px solid #ddd; }
+            #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login form input[type="submit"] {
+              width: 300px;
+              height: 42px;
+              background: #f40;
+              color: white;
+              font-weight: 600;
+              border: none;
+              margin-top: 20px;
+              font-size: 16px;
+              cursor: pointer; }
+          #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .othersWay {
+            margin-top: 20px; }
+            #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .othersWay a {
+              display: inline-block;
+              height: 16px;
+              line-height: 16px;
+              font-size: 12px;
+              color: #6c6c6c;
+              margin-right: 24px; }
+              #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .othersWay a i {
+                font-style: normal;
+                color: #e52425;
+                font-size: 16px;
+                margin-right: 3px; }
+              #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .othersWay a em {
+                font-style: normal;
+                color: #1ba9ee;
+                font-size: 16px;
+                margin-right: 3px; }
+          #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .login_links {
+            margin-top: 25px;
+            float: right; }
+            #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .login_links a {
+              font-size: 12px;
+              color: #6c6c6c;
+              margin: 0 6px; }
+            #rightMenuBox .rightMenu .rightShopCar .shopCarLogin .login .login_links a:hover {
+              color: #f40; }
+        #rightMenuBox .rightMenu .rightShopCar .shopCarLogin #loginOfCode {
+          display: block; }
+        #rightMenuBox .rightMenu .rightShopCar .shopCarLogin #loginOfNum {
+          display: none; }
     #rightMenuBox .rightMenu .rightShopCar:hover {
       background: #ff0036; }
-      #rightMenuBox .rightMenu .rightShopCar:hover div {
+      #rightMenuBox .rightMenu .rightShopCar:hover > div {
         border: none; }
-        #rightMenuBox .rightMenu .rightShopCar:hover div span {
+        #rightMenuBox .rightMenu .rightShopCar:hover > div span {
           background: url(../images/indexImg/rightShopCar1.png); }
     #rightMenuBox .rightMenu .rightMoney {
       width: 35px;
@@ -575,6 +744,178 @@ footer {
         color: #ff0036; }
   #rightMenuBox .rightCode:hover {
     background: #ff0036 url(../images/indexImg/rightCode.png); }
+
+.shoppingCar {
+  background: #e6e6e6;
+  width: 0px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  display: none; }
+  .shoppingCar p {
+    padding-left: 8px;
+    height: 28px;
+    line-height: 28px;
+    color: grey;
+    font-size: 12px;
+    vertical-align: middle; }
+    .shoppingCar p a {
+      float: right;
+      margin-right: 20px;
+      color: grey; }
+    .shoppingCar p a:hover {
+      text-decoration: underline; }
+  .shoppingCar dl {
+    width: 280px;
+    position: relative; }
+    .shoppingCar dl dt {
+      padding-left: 8px;
+      height: 30px;
+      background: white;
+      line-height: 30px; }
+      .shoppingCar dl dt strong {
+        font-size: 12px;
+        font-weight: normal;
+        background: url(../images/indexImg/TB1ziRwRpXXXXcAXFXXXXXXXXXX-23-12.png) no-repeat;
+        padding-left: 27px;
+        color: #333; }
+      .shoppingCar dl dt b {
+        float: right;
+        margin-right: 20px;
+        font-size: 12px;
+        font-weight: normal;
+        color: #999; }
+        .shoppingCar dl dt b i {
+          font-style: normal; }
+    .shoppingCar dl dd {
+      min-height: 60px; }
+      .shoppingCar dl dd .proList {
+        padding: 3px 0;
+        height: 60px;
+        padding-left: 8px;
+        line-height: 60px;
+        position: relative;
+        margin-bottom: 5px;
+        background: #f6f6f6; }
+        .shoppingCar dl dd .proList .deletePro {
+          position: absolute;
+          right: 10px;
+          top: 3px;
+          width: 14px;
+          height: 14px;
+          line-height: 12px;
+          border-radius: 8px;
+          color: #bfbfbf;
+          border: 1px solid #bfbfbf;
+          font-size: 12px;
+          text-align: center;
+          user-select: none;
+          display: none; }
+        .shoppingCar dl dd .proList input {
+          float: left;
+          margin: 20px 5px 0; }
+        .shoppingCar dl dd .proList img {
+          width: 50px;
+          height: 50px;
+          display: inline-block;
+          vertical-align: middle;
+          float: left;
+          margin: 5px; }
+        .shoppingCar dl dd .proList span {
+          width: 54px;
+          display: block;
+          line-height: 20px;
+          height: 50px;
+          margin-top: 5px;
+          float: left; }
+          .shoppingCar dl dd .proList span p {
+            width: 54px;
+            height: 20px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden; }
+        .shoppingCar dl dd .proList .qty {
+          width: 60px;
+          margin: 20px 0;
+          float: left;
+          height: 16px;
+          line-height: 16px;
+          text-align: center;
+          font-size: 12px;
+          color: #999;
+          position: relative; }
+          .shoppingCar dl dd .proList .qty em {
+            font-style: normal; }
+          .shoppingCar dl dd .proList .qty .reduceQty {
+            position: absolute;
+            left: 5px;
+            top: 0;
+            width: 14px;
+            height: 14px;
+            line-height: 12px;
+            border-radius: 8px;
+            color: #bfbfbf;
+            border: 1px solid #bfbfbf;
+            font-size: 16px;
+            font-weight: 900;
+            user-select: none;
+            display: none; }
+          .shoppingCar dl dd .proList .qty .addQty {
+            position: absolute;
+            right: 5px;
+            top: 0;
+            width: 14px;
+            height: 14px;
+            line-height: 12px;
+            text-align: center;
+            border-radius: 8px;
+            color: #bfbfbf;
+            background: #f3f3f3;
+            border: 1px solid #bfbfbf;
+            font-size: 16px;
+            font-weight: 900;
+            user-select: none;
+            display: none; }
+        .shoppingCar dl dd .proList .totalOfPro {
+          float: right;
+          margin-top: 20px;
+          width: 60px;
+          height: 16px;
+          line-height: 16px;
+          font-size: 12px;
+          color: #666; }
+  .shoppingCar .bottomTotal {
+    position: absolute;
+    height: 70px;
+    padding: 0 16px 15px;
+    bottom: 0;
+    right: 0;
+    width: 248px; }
+    .shoppingCar .bottomTotal span {
+      display: block;
+      height: 30px;
+      line-height: 30px; }
+      .shoppingCar .bottomTotal span i {
+        font-size: 12px;
+        font-style: normal; }
+        .shoppingCar .bottomTotal span i em {
+          font-style: normal;
+          margin: 0 3px; }
+      .shoppingCar .bottomTotal span b {
+        float: right;
+        font-size: 12px;
+        font-weight: normal;
+        color: #ff0036; }
+    .shoppingCar .bottomTotal .total {
+      width: 248px;
+      height: 40px;
+      background: #666;
+      border: none;
+      border-radius: 3px;
+      font-size: 14px;
+      color: white;
+      letter-spacing: 5px; }
 
 #goTop {
   width: 35px;
