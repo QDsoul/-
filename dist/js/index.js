@@ -1,13 +1,13 @@
 define(["jquery", "jquery-cookie"], function ($) {
     function main() {
         $(function () {
-            // $.cookie("username", "17866668888", {expires : 7});
+            $.cookie("username", "17866668888", {expires : 7});
             if($.cookie("username")){
                 $(".toLogin").html(`<a href=''>${$.cookie("username")}</a><a href='' class='userExit'>退出</a>`)
                 $("<img src='../images/indexImg/ww-avatar-160.jpg' alt=''>").appendTo($(".tapLogo"))
                 var isShopCar = false;
                 $(".rightShopCar").not(".shopCarLogin").click(function(ev){
-                    alert(this.className);
+                    // alert(this.className);
                     if(!isShopCar){
                         $("#rightMenuBox").stop().animate({"right" : "280px"});
                         $(".shoppingCar").css("display", "block").stop().animate({"width" : "280px"});
@@ -20,6 +20,9 @@ define(["jquery", "jquery-cookie"], function ($) {
                         isShopCar = false;
                     }
                 })
+
+                $(".rightShopCar").css("marginBottom", "36px");
+                $(".rightShopCar .proNum").css("display", "block");
                 // $(document).not(".rightShopCar").click(function(){
                 //     alert(1);
                 //     $("#rightMenuBox").stop().animate({"right" : "0px"});
@@ -40,6 +43,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                 //     }
                 //     return false;
                 // })
+
 
 
                 $("div").filter(".contentBox, .navBox, .bannerBox, .topProductBox").add("header, footer").click(function(ev){
@@ -65,6 +69,8 @@ define(["jquery", "jquery-cookie"], function ($) {
                 $(".rightShopCar, .shopCarLogin").mouseleave(function(){
                     $(".shopCarLogin").css("display", "none");
                 });
+
+                $(".rightShopCar .proNum").css("display", "none");
             }
 
             $(".userExit").click(function(){
@@ -387,68 +393,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                 // });
 
             })
-            // 购物车
-            $(".shoppingCar dl").mouseenter(function(){
-                $(this).find(".reduceQty, .addQty").css("display", "block");
-                $(this).closest("dl").find(".deletePro").css("display", "block");
-            }).mouseleave(function(){
-                $(this).find(".reduceQty, .addQty").css("display", "none");
-                $(this).closest("dl").find(".deletePro").css("display", "none");
-            })
-
-            $(".reduceQty").click(function(){
-                var qty = $(this).closest(".qty").find("em").html();
-                if(qty > 1){
-                    $(this).closest(".qty").find("em").html(--qty);
-                }
-            })
-
-            $(".addQty").click(function(){
-                var qty = $(this).closest(".qty").find("em").html();
-                $(this).closest(".qty").find("em").html(++qty);
-            })
-
-            $(".deletePro").click(function(){
-                $(this).closest(".proList").remove();
-            })
-            $("#selectAll").click(function(){
-                if($("#selectAll").prop("checked")){
-                    $("dl input").prop("checked", "true");
-                }else{
-                    $("dl input").removeAttr("checked");
-                }
-            })
-
-            $("#shoppingCar dt input").click(function(){
-                if($(this).prop("checked")){
-                    $(this).closest("dl").find("dd input").prop("checked", "true");
-                }else{
-                    $(this).closest("dl").find("dd input").removeAttr("checked");
-                }
-            })
-
-            $("#shoppingCar input, #shoppingCar .qty div").click(function(){
-                var allTotal = 0.00;
-                var proCount = 0;
-                for(var i = 0; i < $("#shoppingCar dl").size(); i++){
-                    var shopTotal = 0.00;
-                    for(var j = 0; j < $("#shoppingCar dl").eq(i).find(".proList").size(); j++){
-                        if($("#shoppingCar dl").eq(i).find(".proList").eq(j).find("input").prop("checked")){
-                            shopTotal += parseFloat($("#shoppingCar dl").eq(i).find(".proList").eq(j).find(".totalOfPro b").html()) * $("#shoppingCar dl").eq(i).find(".proList").eq(j).find(".qty em").html();
-                            proCount++
-                        }
-                    }
-                    $("#shoppingCar dl").eq(i).find("dt b i").html(shopTotal);
-                    allTotal += parseFloat($("#shoppingCar dl").eq(i).find("dt b i").html());
-                }
-                $("#shoppingCar span b strong").html(allTotal);
-                $("#shoppingCar span i em").html(proCount);
-                if(proCount != 0){
-                    $("#shoppingCar .bottomTotal .total").css("backgroundColor", "#ff1655").removeAttr("disabled");
-                }else{
-                    $("#shoppingCar .bottomTotal .total").css("backgroundColor", "#666").attr("disabled", "true");
-                }
-            })
+            
 
             // 二维码
             $(".rightCode").mouseover(function () {

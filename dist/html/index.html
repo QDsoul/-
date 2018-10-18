@@ -220,6 +220,7 @@
                 <div>
                     <span></span>
                     <p>购物车</p>
+                    <div class="proNum">0</div> 
                 </div>
                 <div class="shopCarLogin">
                     <div class="login" id="loginOfCode">
@@ -252,7 +253,7 @@
                         <p class="tip">123</p>
                         <form action="">
                             <div class="text">
-                                <label for="username">&#xe507;</label><input id="username" type="text" placeholder="会员名/邮箱/手机号">
+                                <label for="username">&#xe507;</label><input id="username" autocomplete="off" type="text" placeholder="会员名/邮箱/手机号">
                             </div>
                             <div class="text">
                                 <label for="password">&#xe649;</label><input id="password" type="password">
@@ -298,77 +299,7 @@
             <label for="selectAll">全选</label>
             <a href="">全屏查看</a>
         </p>
-        <dl>
-            <dt>
-                <input type="checkbox">
-                <strong>马克华菲</strong>
-                <b>￥<i>0.00</i></b>
-            </dt>
-            <dd>
-                <div class="proList">
-                    <div class="deletePro">x</div>
-                    <input type="checkbox">
-                    <img src="../images/product/booth1.jpg" alt="">
-                    <span>
-                        <p>颜色分类</p>
-                        <p>尺码</p>
-                    </span>
-                    <div class="qty">
-                        <div class="reduceQty">-</div>
-                        <em>2</em>
-                        <div class="addQty">+</div>
-                    </div>
-                    <div class="totalOfPro">
-                        ￥<b>329.00</b>
-                    </div>
-                </div>
-                <div class="proList">
-                    <div class="deletePro">x</div>
-                    <input type="checkbox">
-                    <img src="../images/product/booth1.jpg" alt="">
-                    <span>
-                        <p>颜色分类</p>
-                        <p>尺码</p>
-                    </span>
-                    <div class="qty">
-                        <div class="reduceQty">-</div>
-                        <em>2</em>
-                        <div class="addQty">+</div>
-                    </div>
-                    <div class="totalOfPro">
-                            ￥<b>329.00</b>
-                    </div>
-                </div>
-            </dd>
-        </dl>
-        <dl>
-            <dt>
-                <input type="checkbox">
-                <strong>马克华菲</strong>
-                <b>￥<i>0.00</i></b>
-            </dt>
-
-            <dd>
-                <div class="proList">
-                    <div class="deletePro">x</div>
-                    <input type="checkbox">
-                    <img src="../images/product/booth1.jpg" alt="">
-                    <span>
-                        <p>颜色分类</p>
-                        <p>尺码</p>
-                    </span>
-                    <div class="qty">
-                        <div class="reduceQty">-</div>
-                        <em>1</em>
-                        <div class="addQty">+</div>
-                    </div>
-                    <div class="totalOfPro">
-                            ￥<b>329.00</b>
-                    </div>
-                </div>
-            </dd>
-
-        </dl>
+        <div id="shopCarListBox"></div>
         <div class="bottomTotal">
             <span>
                 <i>已选<em>0</em>件</i>

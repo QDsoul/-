@@ -7,11 +7,14 @@ define(["jquery", "jquery-cookie"], function ($) {
             var proUrlIndex = location.href.indexOf("?");
             var proUrl = location.href.substring(proUrlIndex + 1);
             var bottomImg = '';
+
             // 获取商品数据
             $.ajax({
                 type: "GET",
                 url: "../json/product.json",
                 success: function (res) {
+
+                    // toProNum();
 
                     for (var i = 0; i < res[proUrl].show.length; i++) {
                         bottomImg += `<img src="../images/product/${res[proUrl].show[i][0]}" alt="">`;
@@ -156,15 +159,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                         $(".proDivision").remove();
                     }
 
-                    //加入购物车
-                    $("#toAddShopCar").click(function () {
-                        if ($.cookie("username1")) {
-
-                        } else {
-                            $(".shopCarLogin").css("display", "block");
-                        }
-                    });
-
+                    
 
                     var proInfo = '';
                     for (i = 1; i < res[proUrl].info.length; i++) {
@@ -296,6 +291,7 @@ define(["jquery", "jquery-cookie"], function ($) {
                             $(".qty").val(qty);
                         }
                     })
+
                 },
                 error: function (msg) {
                     alert("error : " + msg);
@@ -305,6 +301,6 @@ define(["jquery", "jquery-cookie"], function ($) {
         })
     }
     return {
-        product: main
+        product : main
     }
 })

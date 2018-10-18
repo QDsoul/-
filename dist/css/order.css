@@ -967,399 +967,366 @@ footer {
       text-align: center;
       color: #494949; }
 
-.navBox {
-  height: 37px;
-  border-bottom: 1px solid #ff195a; }
-  .navBox nav {
-    height: 37px;
-    width: 1190px;
-    margin: 0 auto; }
-    .navBox nav p {
-      width: 180px;
-      height: 38px;
-      padding-left: 20px;
-      background: black;
-      color: white;
-      line-height: 38px;
-      font-size: 14px;
-      float: left; }
-    .navBox nav ul {
-      float: left;
-      height: 37px;
-      padding-left: 40px; }
-      .navBox nav ul li {
-        float: left; }
-        .navBox nav ul li a {
-          height: 37px;
-          line-height: 37px;
-          margin-right: 40px;
-          font-size: 14px; }
-        .navBox nav ul li a:hover {
-          color: #ff195a; }
-    .navBox nav > a {
-      float: right;
-      font-size: 14px;
-      line-height: 37px;
-      margin-right: 40px; }
-    .navBox nav > a:hover {
-      text-decoration: underline; }
-
-.bannerBox {
-  height: 420px; }
-  .bannerBox .banner {
+header {
+  height: 35px;
+  border-bottom: 1px solid #EEE;
+  background: #f5f5f5; }
+  header .header {
     width: 1190px;
     margin: 0 auto;
+    font-size: 12px;
+    height: 35px;
+    line-height: 35px;
     position: relative; }
-    .bannerBox .banner .category {
-      width: 200px;
-      height: 420px;
-      background: #333;
+    header .header .left {
       float: left; }
-      .bannerBox .banner .category dl {
-        padding: 0 20px;
-        height: 84px; }
-        .bannerBox .banner .category dl dt {
-          padding-top: 15px;
-          height: 25px; }
-          .bannerBox .banner .category dl dt img {
-            width: 24px;
-            height: 24px;
-            float: left; }
-          .bannerBox .banner .category dl dt h4 {
-            font-size: 16px;
-            float: left;
-            color: #eee;
-            margin-left: 15px; }
-        .bannerBox .banner .category dl dd {
-          clear: both;
-          padding: 9px 0;
-          height: 25px;
-          border-bottom: 1px dotted #999; }
-          .bannerBox .banner .category dl dd a {
-            font-size: 12px;
-            color: #eee; }
-      .bannerBox .banner .category dl:nth-last-child(1) dd {
-        border: none;
-        height: 26px; }
-      .bannerBox .banner .category dl:hover {
-        background: #ff195a; }
-    .bannerBox .banner #category_child {
-      width: 685px;
-      min-height: 436px;
-      padding: 30px 0 4px 30px;
-      position: absolute;
-      left: 200px;
-      box-shadow: 3px 3px 10px 1px #ccc;
-      display: none;
-      background: white;
-      z-index: 100; }
-      .bannerBox .banner #category_child > div {
-        width: 313px;
-        margin: 0 22px 26px 0;
-        overflow: hidden;
-        float: left; }
-        .bannerBox .banner #category_child > div h4 {
-          font-size: 12px;
-          font-weight: 700;
-          color: #333; }
-        .bannerBox .banner #category_child > div span {
-          display: block;
-          width: 313px;
-          margin-left: -10px; }
-          .bannerBox .banner #category_child > div span a {
-            font-size: 12px;
-            display: inline-block;
-            height: 12px;
-            line-height: 12px;
-            color: #666;
-            padding: 0 7px 0 10px;
-            margin-top: 10px;
-            border-left: 1px solid #999; }
-          .bannerBox .banner #category_child > div span a:hover {
-            text-decoration: underline;
-            color: #FF0036; }
-      .bannerBox .banner #category_child > div:nth-child(2n+1) {
-        clear: both; }
-    .bannerBox .banner .bannerImg {
-      width: 740px;
-      height: 420px;
-      float: left;
-      overflow: hidden;
-      position: relative; }
-      .bannerBox .banner .bannerImg ul {
-        height: 420px;
-        position: absolute;
-        left: 0; }
-        .bannerBox .banner .bannerImg ul img {
-          float: left; }
-      .bannerBox .banner .bannerImg ol {
-        width: 156px;
-        height: 16px;
-        position: absolute;
-        bottom: 32px;
-        right: 32px; }
-        .bannerBox .banner .bannerImg ol li {
-          height: 16px;
-          width: 16px;
-          border-radius: 8px;
-          background: rgba(255, 255, 255, 0.4);
+      header .header .left a {
+        font-size: 12px;
+        color: #6C6C6C; }
+      header .header .left a:nth-child(1) {
+        color: #F22E00;
+        margin-right: 7px; }
+      header .header .left a:nth-child(2) {
+        margin-right: 18px; }
+      header .header .left a:hover {
+        color: #F40; }
+    header .header .right {
+      float: right; }
+      header .header .right ul li {
+        height: 35px;
+        line-height: 35px;
+        float: left;
+        padding: 0 6px; }
+        header .header .right ul li a {
+          margin-right: 7px;
+          display: block; }
+        header .header .right ul li a:hover {
+          color: #F40; }
+      header .header .right ul li:nth-child(1) a {
+        color: #F22E00; }
+      header .header .right ul li:nth-child(2),
+      header .header .right ul li:nth-child(4),
+      header .header .right ul li:nth-child(6),
+      header .header .right ul li:nth-child(7),
+      header .header .right ul li:nth-child(8) {
+        position: relative; }
+        header .header .right ul li:nth-child(2) a,
+        header .header .right ul li:nth-child(4) a,
+        header .header .right ul li:nth-child(6) a,
+        header .header .right ul li:nth-child(7) a,
+        header .header .right ul li:nth-child(8) a {
           float: left;
-          margin-left: 10px;
-          position: relative;
-          cursor: pointer; }
-        .bannerBox .banner .bannerImg ol li:before {
-          content: "";
+          height: 35px; }
+        header .header .right ul li:nth-child(2) span,
+        header .header .right ul li:nth-child(4) span,
+        header .header .right ul li:nth-child(6) span,
+        header .header .right ul li:nth-child(7) span,
+        header .header .right ul li:nth-child(8) span {
+          display: block;
+          float: left;
+          margin-top: 15px;
+          width: 0;
+          height: 0;
+          border-width: 3px;
+          border-style: solid dashed dashed;
+          border-color: #bbb transparent transparent; }
+        header .header .right ul li:nth-child(2) p,
+        header .header .right ul li:nth-child(4) p,
+        header .header .right ul li:nth-child(6) p,
+        header .header .right ul li:nth-child(7) p,
+        header .header .right ul li:nth-child(8) p {
+          min-height: 20px;
+          padding: 8px 0px;
           position: absolute;
-          top: 0;
+          border: 1px solid #eee;
+          border-top: none;
           left: 0;
-          bottom: 0;
-          right: 0;
-          margin: auto;
-          width: 10px;
-          height: 10px;
-          border-radius: 5px;
-          background: white; }
-        .bannerBox .banner .bannerImg ol .active:before {
-          content: "";
-          background: #ff1655; }
-      .bannerBox .banner .bannerImg #prevBanner {
-        display: block;
-        width: 34px;
-        height: 68px;
-        background: rgba(43, 43, 43, 0.3) url("../images/indexImg/banner_prevPic.png") no-repeat 9px 21px;
-        position: absolute;
-        top: 50%;
-        left: -34px;
-        z-index: 10;
-        cursor: pointer;
-        margin-top: -34px; }
-      .bannerBox .banner .bannerImg #prevBanner:hover {
-        background: rgba(43, 43, 43, 0.5) url("../images/indexImg/banner_prevPic.png") no-repeat 9px 21px; }
-      .bannerBox .banner .bannerImg #nextBanner {
-        display: block;
-        width: 34px;
-        height: 68px;
-        background: rgba(43, 43, 43, 0.3) url("../images/indexImg/banner_nextPic.png") no-repeat 9px 21px;
-        position: absolute;
-        top: 50%;
-        right: -34px;
-        z-index: 10;
-        cursor: pointer;
-        margin-top: -34px; }
-      .bannerBox .banner .bannerImg #nextBanner:hover {
-        background: rgba(43, 43, 43, 0.5) url("../images/indexImg/banner_nextPic.png") no-repeat 9px 21px; }
-    .bannerBox .banner .codeImg {
-      width: 240px;
-      height: 420px;
-      float: left; }
+          top: 35px;
+          display: none;
+          z-index: 10;
+          background: white;
+          clear: both; }
+          header .header .right ul li:nth-child(2) p a,
+          header .header .right ul li:nth-child(4) p a,
+          header .header .right ul li:nth-child(6) p a,
+          header .header .right ul li:nth-child(7) p a,
+          header .header .right ul li:nth-child(8) p a {
+            width: 82px;
+            display: block;
+            padding: 0 5px;
+            margin: 0;
+            white-space: nowrap; }
+          header .header .right ul li:nth-child(2) p a:hover,
+          header .header .right ul li:nth-child(4) p a:hover,
+          header .header .right ul li:nth-child(6) p a:hover,
+          header .header .right ul li:nth-child(7) p a:hover,
+          header .header .right ul li:nth-child(8) p a:hover {
+            background: #eee; }
+      header .header .right ul li:nth-child(2):hover,
+      header .header .right ul li:nth-child(4):hover,
+      header .header .right ul li:nth-child(6):hover,
+      header .header .right ul li:nth-child(7):hover,
+      header .header .right ul li:nth-child(8):hover {
+        background: white;
+        border: 1px solid #eee;
+        border-top: none;
+        border-bottom: 1px solid white;
+        padding: 0 5px; }
+        header .header .right ul li:nth-child(2):hover p,
+        header .header .right ul li:nth-child(4):hover p,
+        header .header .right ul li:nth-child(6):hover p,
+        header .header .right ul li:nth-child(7):hover p,
+        header .header .right ul li:nth-child(8):hover p {
+          left: -1px;
+          display: block; }
+        header .header .right ul li:nth-child(2):hover span,
+        header .header .right ul li:nth-child(4):hover span,
+        header .header .right ul li:nth-child(6):hover span,
+        header .header .right ul li:nth-child(7):hover span,
+        header .header .right ul li:nth-child(8):hover span {
+          transform: rotate(180deg);
+          transition: 0.3s;
+          transform-origin: 50% 30%; }
+      header .header .right ul li:nth-child(3),
+      header .header .right ul li:nth-child(8) {
+        position: relative; }
+        header .header .right ul li:nth-child(3) a,
+        header .header .right ul li:nth-child(8) a {
+          float: left; }
+        header .header .right ul li:nth-child(3) i,
+        header .header .right ul li:nth-child(8) i {
+          font-style: normal;
+          color: #F40;
+          margin-right: 5px; }
+        header .header .right ul li:nth-child(3) span,
+        header .header .right ul li:nth-child(8) span {
+          display: block;
+          float: left;
+          margin-top: 15px;
+          width: 0;
+          height: 0;
+          border-width: 3px;
+          border-style: solid dashed dashed;
+          border-color: #bbb transparent transparent; }
+      header .header .right ul li:nth-child(4) {
+        position: relative; }
+        header .header .right ul li:nth-child(4) a {
+          float: left; }
+        header .header .right ul li:nth-child(4) i {
+          font-style: normal;
+          color: #9c9c9c;
+          margin-right: 5px; }
+        header .header .right ul li:nth-child(4) span {
+          display: block;
+          float: left;
+          margin-top: 15px;
+          width: 0;
+          height: 0;
+          border-width: 3px;
+          border-style: solid dashed dashed;
+          border-color: #bbb transparent transparent; }
+        header .header .right ul li:nth-child(4) p {
+          padding: 8px 0px;
+          position: absolute;
+          border: 1px solid #eee;
+          border-top: none;
+          left: 0;
+          top: 35px;
+          display: none;
+          z-index: 10;
+          background: white;
+          clear: both; }
+          header .header .right ul li:nth-child(4) p a {
+            width: 82px;
+            display: block;
+            padding: 0 5px;
+            margin: 0;
+            white-space: nowrap; }
+          header .header .right ul li:nth-child(4) p a:hover {
+            background: #eee; }
+      header .header .right ul li:nth-child(4):hover {
+        background: white;
+        padding: 0 5px;
+        border: 1px solid #eee;
+        border-top: none;
+        border-bottom: 1px solid white; }
+        header .header .right ul li:nth-child(4):hover p {
+          left: -1px; }
+        header .header .right ul li:nth-child(4):hover span {
+          transform: rotate(180deg);
+          transition: 0.3s;
+          transform-origin: 50% 30%; }
+      header .header .right ul li:nth-child(8) {
+        position: static; }
+        header .header .right ul li:nth-child(8) p {
+          width: 1190px;
+          min-height: 30px;
+          left: 0; }
 
-.topProductBox .topProduct {
-  width: 1190px;
-  margin: 0 auto; }
-  .topProductBox .topProduct .promise {
-    width: 1190px;
-    margin: 0 auto; }
-  .topProductBox .topProduct .model1 {
-    width: 1190px;
-    margin: 0 auto; }
-    .topProductBox .topProduct .model1 .title {
-      text-align: center;
-      padding: 10px 0; }
-      .topProductBox .topProduct .model1 .title img {
-        display: inline-block; }
-    .topProductBox .topProduct .model1 .products a {
-      display: block;
-      float: left;
-      width: 266px;
-      padding: 0 15px 10px; }
-      .topProductBox .topProduct .model1 .products a dt {
-        padding: 14px 14px 7px 14px; }
-      .topProductBox .topProduct .model1 .products a dd {
-        width: 266px;
-        text-align: center; }
-        .topProductBox .topProduct .model1 .products a dd p {
-          width: 266px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          font-size: 14px;
-          color: #999;
-          margin: 6px 0; }
-        .topProductBox .topProduct .model1 .products a dd em {
-          font-size: 16px;
-          color: #ff195a;
-          font-style: normal; }
-        .topProductBox .topProduct .model1 .products a dd i {
-          color: #999;
-          text-decoration: line-through;
-          font-size: 12px;
-          font-style: normal; }
+.logoBox {
+  height: 83px; }
+  .logoBox .logo {
+    width: 990px;
+    height: 43px;
+    padding: 20px 0;
+    margin: 0 auto;
+    line-height: 43px; }
+    .logoBox .logo i {
+      font-size: 50px;
+      font-style: normal;
+      color: #F40;
+      float: left; }
+    .logoBox .logo b {
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 43px;
+      display: inline-block;
+      margin-left: 6px; }
 
 .contentBox {
-  background: #f5f5f5; }
+  min-height: 300px; }
   .contentBox .content {
-    width: 1190px;
-    margin: 0 auto;
-    overflow: hidden; }
-    .contentBox .content .productBox {
-      background: #f5f5f5;
-      overflow: hidden; }
-      .contentBox .content .productBox .productTitle {
+    width: 990px;
+    min-height: 300px;
+    margin: 0 auto; }
+    .contentBox .content .switch {
+      height: 36px;
+      border-bottom: 2px solid #e6e6e6; }
+      .contentBox .content .switch a {
+        display: block;
+        float: left;
+        width: 124px;
         text-align: center;
-        height: 40px;
-        margin-top: 40px; }
-        .contentBox .content .productBox .productTitle img {
-          display: inline-block; }
-      .contentBox .content .productBox .product {
-        height: 475px;
-        width: 1190px;
-        margin: 0 auto;
-        border-top: 1px solid #e54077;
-        background: white; }
-        .contentBox .content .productBox .product .hot {
-          width: 98px;
-          padding: 15px 0 0 20px;
-          float: left; }
-          .contentBox .content .productBox .product .hot h4 {
-            font-size: 14px;
-            color: #333; }
-          .contentBox .content .productBox .product .hot a {
-            display: block;
-            margin-top: 20px;
-            font-size: 12px;
-            height: 12px;
-            line-height: 12px; }
-          .contentBox .content .productBox .product .hot a:hover {
-            text-decoration: underline;
-            color: #e54077; }
-        .contentBox .content .productBox .product .title {
-          width: 192px;
-          height: 475px;
-          float: left;
-          position: relative; }
-          .contentBox .content .productBox .product .title img {
-            width: 100%;
-            height: 100%; }
-          .contentBox .content .productBox .product .title .detail {
-            height: 98px;
-            width: 192px;
-            background: rgba(229, 64, 119, 0.95);
-            position: absolute;
-            bottom: 0;
-            cursor: pointer; }
-            .contentBox .content .productBox .product .title .detail h2 {
-              margin-top: 26px;
-              text-align: center;
-              color: white;
-              font-size: 20px;
-              font-weight: 600; }
-            .contentBox .content .productBox .product .title .detail p {
-              font-size: 12px;
-              border-top: 2px solid white;
-              border-bottom: 2px solid white;
-              text-align: center;
-              width: 104px;
-              color: white;
-              margin: 2px auto;
-              font-weight: 600; }
-        .contentBox .content .productBox .product .pro {
-          width: 596px;
-          height: 475px;
-          float: left; }
-          .contentBox .content .productBox .product .pro dl {
-            width: 197px;
-            height: 237px;
-            border-right: 1px solid #e8e8e8;
-            cursor: pointer;
-            float: left; }
-            .contentBox .content .productBox .product .pro dl dt img {
-              margin: 16px 19px 0 19px; }
-            .contentBox .content .productBox .product .pro dl dd {
-              text-align: center;
-              overflow: hidden; }
-              .contentBox .content .productBox .product .pro dl dd p {
-                font-size: 12px;
-                color: #4c4c4c;
-                width: 198px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis; }
-              .contentBox .content .productBox .product .pro dl dd span em {
-                font-size: 18px;
-                font-style: normal;
-                color: #f14f4f;
-                font-weight: 600; }
-              .contentBox .content .productBox .product .pro dl dd span i {
-                font-size: 13px;
-                color: #a6a6a6;
-                text-decoration: line-through;
-                font-style: normal; }
-          .contentBox .content .productBox .product .pro dl:nth-child(1) {
-            width: 375px;
-            height: 236px;
-            padding-left: 20px;
-            border-bottom: 1px solid #e8e8e8; }
-            .contentBox .content .productBox .product .pro dl:nth-child(1) dt {
-              float: right; }
-              .contentBox .content .productBox .product .pro dl:nth-child(1) dt img {
-                width: 212px;
-                height: 212px;
-                margin: 12px; }
-            .contentBox .content .productBox .product .pro dl:nth-child(1) dd {
-              margin-top: 100px;
-              text-align: left; }
-              .contentBox .content .productBox .product .pro dl:nth-child(1) dd p {
-                width: 141px;
-                text-align: left;
-                font-weight: 600;
-                font-size: 14px;
-                height: 24px;
-                line-height: 24px;
-                border-bottom: 1px solid black; }
-              .contentBox .content .productBox .product .pro dl:nth-child(1) dd span {
-                text-align: left; }
-          .contentBox .content .productBox .product .pro dl:nth-child(2) {
-            border-bottom: 1px solid #e8e8e8;
-            height: 236px; }
-        .contentBox .content .productBox .product .logo {
-          width: 270px;
-          height: 475px;
-          padding: 0 8px 0 5px;
-          float: left; }
-          .contentBox .content .productBox .product .logo h3 {
-            height: 30px;
-            border-bottom: 1px solid #e8e8e8;
-            padding: 13px 0 0 0;
-            line-height: 30px; }
-            .contentBox .content .productBox .product .logo h3 b {
-              font-size: 22px;
-              height: 30px;
-              display: inline-block;
-              border-bottom: 1px solid #e54077;
-              color: #e54077;
-              font-weight: 600; }
-            .contentBox .content .productBox .product .logo h3 strong {
-              font-size: 18px;
-              color: #737373;
-              font-weight: normal; }
-          .contentBox .content .productBox .product .logo dl {
-            width: 130px;
-            height: 87px;
-            margin: 10px 0 0 3px;
-            cursor: pointer;
-            float: left; }
-            .contentBox .content .productBox .product .logo dl dt {
-              vertical-align: middle;
-              text-align: center; }
-              .contentBox .content .productBox .product .logo dl dt img {
-                width: 90px;
-                height: 45px;
-                display: inline-block; }
-            .contentBox .content .productBox .product .logo dl dd {
-              width: 130px;
-              height: 22px;
-              background: #ededed;
-              color: #868686;
-              font-size: 12px;
-              text-align: center;
-              line-height: 22px; }
+        color: #3c3c3c;
+        font-weight: 900;
+        font-size: 16px;
+        padding-bottom: 15px; }
+      .contentBox .content .switch a.active {
+        color: #f40;
+        border-bottom: 2px solid #f40; }
+      .contentBox .content .switch .total1 {
+        float: right;
+        font-size: 12px; }
+        .contentBox .content .switch .total1 b {
+          color: #f40;
+          display: inline-block;
+          width: 45px;
+          text-align: center; }
+        .contentBox .content .switch .total1 input {
+          width: 55px;
+          height: 25px;
+          background: #aaa;
+          border: none;
+          color: white;
+          border-radius: 3px;
+          cursor: not-allowed; }
+    .contentBox .content table {
+      text-align: left;
+      line-height: 50px;
+      font-size: 12px; }
+      .contentBox .content table tr td:nth-child(1) {
+        width: 65px;
+        height: 50px;
+        padding-left: 15px; }
+      .contentBox .content table tr td:nth-child(2) {
+        width: 210px;
+        height: 50px;
+        padding-left: 90px;
+        text-align: left; }
+      .contentBox .content table tr td:nth-child(3) {
+        width: 160px;
+        height: 50px;
+        padding-left: 10px; }
+      .contentBox .content table tr td:nth-child(4), .contentBox .content table tr td:nth-child(5) {
+        width: 110px;
+        height: 50px;
+        padding-left: 10px;
+        text-align: left; }
+      .contentBox .content table tr td:nth-child(6) {
+        width: 105px;
+        height: 50px;
+        text-align: left; }
+      .contentBox .content table tr td:nth-child(7) {
+        width: 85px;
+        height: 50px;
+        padding-left: 15px;
+        text-align: left; }
+    .contentBox .content .toPayPro dl dt {
+      height: 40px;
+      line-height: 40px;
+      padding-left: 15px; }
+      .contentBox .content .toPayPro dl dt i {
+        font-size: 12px;
+        font-style: normal;
+        padding-left: 30px;
+        background: url(../images/indexImg/TB1ziRwRpXXXXcAXFXXXXXXXXXX-23-12.png) no-repeat;
+        margin-left: 5px; }
+      .contentBox .content .toPayPro dl dt em {
+        font-size: 12px;
+        font-style: normal; }
+        .contentBox .content .toPayPro dl dt em a:hover {
+          text-decoration: underline;
+          color: #f40; }
+    .contentBox .content .toPayPro dl dd {
+      width: 988px;
+      height: 128px;
+      border: 1px solid #ccc; }
+    .contentBox .content .totalBox {
+      width: 980px;
+      height: 50px;
+      background: #e5e5e5;
+      margin-top: 15px;
+      line-height: 50px;
+      padding-left: 10px;
+      font-size: 12px; }
+      .contentBox .content .totalBox a {
+        margin-left: 25px; }
+      .contentBox .content .totalBox a:hover {
+        color: #f40;
+        text-decoration: underline; }
+
+.footerBox {
+  height: 171px; }
+  .footerBox .footer {
+    height: 154px;
+    width: 1190px;
+    margin: 60px auto 0;
+    padding: 7px 0 9px 0;
+    border-top: 1px solid #ddd; }
+    .footerBox .footer p {
+      height: 27px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ddd; }
+      .footerBox .footer p a {
+        font-size: 12px;
+        color: #6c6c6c;
+        padding: 0 6px;
+        border-right: 1px solid #ddd; }
+      .footerBox .footer p a:nth-last-child(1) {
+        border: none; }
+      .footerBox .footer p a:hover {
+        color: #f40; }
+    .footerBox .footer ul {
+      margin-top: 8px;
+      float: left;
+      margin-bottom: 8px; }
+      .footerBox .footer ul li {
+        float: left;
+        margin: 0 4px; }
+        .footerBox .footer ul li a {
+          font-size: 12px;
+          color: #6c6c6c; }
+        .footerBox .footer ul li a:hover {
+          color: #f40; }
+    .footerBox .footer b {
+      float: left;
+      margin-top: 8px;
+      font-size: 12px;
+      margin-left: 30px;
+      color: #9c9c9c;
+      font-weight: normal; }
+    .footerBox .footer span {
+      display: block;
+      font-size: 12px;
+      color: #9c9c9c;
+      clear: both; }

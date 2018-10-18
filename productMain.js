@@ -8,16 +8,18 @@ require.config({
         "login" : "login",
         "register" : "register",
         "drag" : "drag",
-        "product" : "product"
+        "product" : "product",
+        "shoppingCar" : "shoppingCar"
     },
 
     shim:{
-        'jquery-cookie' : ["jquery"] 
+        'jquery-cookie' : ["jquery"]
     }
 })
 
-require(["index", "login", "register", "product"], function(index, login, register, product){
+require(["index", "login", "register", "product", "shoppingCar"], function(index, login, register, product, shoppingCar){
     index.index();
     product.product();
     login.login();
+    shoppingCar.shoppingCar()
 })

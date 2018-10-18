@@ -518,6 +518,19 @@ footer {
           margin: 0 auto;
           font-weight: 600;
           font-size: 12px; }
+      #rightMenuBox .rightMenu .rightShopCar .proNum {
+        width: 24px;
+        height: 24px;
+        background: #ff0036;
+        border-radius: 50%;
+        margin: 5px auto;
+        position: absolute;
+        bottom: -36px;
+        font-size: 14px;
+        color: white;
+        text-align: center;
+        line-height: 24px;
+        display: none; }
       #rightMenuBox .rightMenu .rightShopCar .shopCarLogin {
         width: 350px;
         height: 400px;
@@ -766,125 +779,129 @@ footer {
       color: grey; }
     .shoppingCar p a:hover {
       text-decoration: underline; }
-  .shoppingCar dl {
-    width: 280px;
-    position: relative; }
-    .shoppingCar dl dt {
-      padding-left: 8px;
-      height: 30px;
-      background: white;
-      line-height: 30px; }
-      .shoppingCar dl dt strong {
-        font-size: 12px;
-        font-weight: normal;
-        background: url(../images/indexImg/TB1ziRwRpXXXXcAXFXXXXXXXXXX-23-12.png) no-repeat;
-        padding-left: 27px;
-        color: #333; }
-      .shoppingCar dl dt b {
-        float: right;
-        margin-right: 20px;
-        font-size: 12px;
-        font-weight: normal;
-        color: #999; }
-        .shoppingCar dl dt b i {
-          font-style: normal; }
-    .shoppingCar dl dd {
-      min-height: 60px; }
-      .shoppingCar dl dd .proList {
-        padding: 3px 0;
-        height: 60px;
+  .shoppingCar #shopCarListBox {
+    overflow-y: auto;
+    height: 580px;
+    overflow-x: hidden; }
+    .shoppingCar #shopCarListBox dl {
+      width: 280px;
+      position: relative; }
+      .shoppingCar #shopCarListBox dl dt {
         padding-left: 8px;
-        line-height: 60px;
-        position: relative;
-        margin-bottom: 5px;
-        background: #f6f6f6; }
-        .shoppingCar dl dd .proList .deletePro {
-          position: absolute;
-          right: 10px;
-          top: 3px;
-          width: 14px;
-          height: 14px;
-          line-height: 12px;
-          border-radius: 8px;
-          color: #bfbfbf;
-          border: 1px solid #bfbfbf;
+        height: 30px;
+        background: white;
+        line-height: 30px; }
+        .shoppingCar #shopCarListBox dl dt strong {
           font-size: 12px;
-          text-align: center;
-          user-select: none;
-          display: none; }
-        .shoppingCar dl dd .proList input {
-          float: left;
-          margin: 20px 5px 0; }
-        .shoppingCar dl dd .proList img {
-          width: 50px;
-          height: 50px;
-          display: inline-block;
-          vertical-align: middle;
-          float: left;
-          margin: 5px; }
-        .shoppingCar dl dd .proList span {
-          width: 54px;
-          display: block;
-          line-height: 20px;
-          height: 50px;
-          margin-top: 5px;
-          float: left; }
-          .shoppingCar dl dd .proList span p {
-            width: 54px;
-            height: 20px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden; }
-        .shoppingCar dl dd .proList .qty {
-          width: 60px;
-          margin: 20px 0;
-          float: left;
-          height: 16px;
-          line-height: 16px;
-          text-align: center;
-          font-size: 12px;
-          color: #999;
-          position: relative; }
-          .shoppingCar dl dd .proList .qty em {
-            font-style: normal; }
-          .shoppingCar dl dd .proList .qty .reduceQty {
-            position: absolute;
-            left: 5px;
-            top: 0;
-            width: 14px;
-            height: 14px;
-            line-height: 12px;
-            border-radius: 8px;
-            color: #bfbfbf;
-            border: 1px solid #bfbfbf;
-            font-size: 16px;
-            font-weight: 900;
-            user-select: none;
-            display: none; }
-          .shoppingCar dl dd .proList .qty .addQty {
-            position: absolute;
-            right: 5px;
-            top: 0;
-            width: 14px;
-            height: 14px;
-            line-height: 12px;
-            text-align: center;
-            border-radius: 8px;
-            color: #bfbfbf;
-            background: #f3f3f3;
-            border: 1px solid #bfbfbf;
-            font-size: 16px;
-            font-weight: 900;
-            user-select: none;
-            display: none; }
-        .shoppingCar dl dd .proList .totalOfPro {
+          font-weight: normal;
+          background: url(../images/indexImg/TB1ziRwRpXXXXcAXFXXXXXXXXXX-23-12.png) no-repeat;
+          padding-left: 27px;
+          color: #333; }
+        .shoppingCar #shopCarListBox dl dt b {
           float: right;
-          margin-top: 20px;
-          width: 60px;
-          height: 16px;
-          line-height: 16px;
+          margin-right: 20px;
           font-size: 12px;
-          color: #666; }
+          font-weight: normal;
+          color: #999; }
+          .shoppingCar #shopCarListBox dl dt b i {
+            font-style: normal; }
+      .shoppingCar #shopCarListBox dl dd {
+        min-height: 60px; }
+        .shoppingCar #shopCarListBox dl dd .proList {
+          padding: 3px 0;
+          height: 60px;
+          padding-left: 8px;
+          line-height: 60px;
+          position: relative;
+          margin-bottom: 5px;
+          background: #f6f6f6; }
+          .shoppingCar #shopCarListBox dl dd .proList .deletePro {
+            position: absolute;
+            right: 10px;
+            top: 3px;
+            width: 14px;
+            height: 14px;
+            line-height: 12px;
+            border-radius: 8px;
+            color: #bfbfbf;
+            border: 1px solid #bfbfbf;
+            font-size: 12px;
+            text-align: center;
+            user-select: none;
+            display: none; }
+          .shoppingCar #shopCarListBox dl dd .proList input {
+            float: left;
+            margin: 20px 5px 0; }
+          .shoppingCar #shopCarListBox dl dd .proList img {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            vertical-align: middle;
+            float: left;
+            margin: 5px; }
+          .shoppingCar #shopCarListBox dl dd .proList span {
+            width: 54px;
+            display: block;
+            line-height: 20px;
+            height: 50px;
+            margin-top: 5px;
+            float: left; }
+            .shoppingCar #shopCarListBox dl dd .proList span p {
+              width: 54px;
+              height: 20px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden; }
+          .shoppingCar #shopCarListBox dl dd .proList .qty {
+            width: 60px;
+            margin: 20px 0;
+            float: left;
+            height: 16px;
+            line-height: 16px;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            position: relative; }
+            .shoppingCar #shopCarListBox dl dd .proList .qty em {
+              font-style: normal; }
+            .shoppingCar #shopCarListBox dl dd .proList .qty .reduceQty {
+              position: absolute;
+              left: 5px;
+              top: 0;
+              width: 14px;
+              height: 14px;
+              line-height: 12px;
+              border-radius: 8px;
+              color: #bfbfbf;
+              border: 1px solid #bfbfbf;
+              font-size: 16px;
+              font-weight: 900;
+              user-select: none;
+              display: none; }
+            .shoppingCar #shopCarListBox dl dd .proList .qty .addQty {
+              position: absolute;
+              right: 5px;
+              top: 0;
+              width: 14px;
+              height: 14px;
+              line-height: 12px;
+              text-align: center;
+              border-radius: 8px;
+              color: #bfbfbf;
+              background: #f3f3f3;
+              border: 1px solid #bfbfbf;
+              font-size: 16px;
+              font-weight: 900;
+              user-select: none;
+              display: none; }
+          .shoppingCar #shopCarListBox dl dd .proList .totalOfPro {
+            float: right;
+            margin-top: 20px;
+            width: 60px;
+            height: 16px;
+            line-height: 16px;
+            font-size: 12px;
+            color: #666; }
   .shoppingCar .bottomTotal {
     position: absolute;
     height: 70px;
